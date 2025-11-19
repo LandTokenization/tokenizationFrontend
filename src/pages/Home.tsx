@@ -1,66 +1,59 @@
+import React from 'react';
+import './Home.css';
 
-
-function Home() {
+const Home: React.FC = () => {
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        width: "100%",
-        margin: 0,
-        padding: 0,
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        textAlign: "center",
-        background: "linear-gradient(135deg, #6A11CB, #2575FC)",
-        color: "#fff",
-        fontFamily: "Inter, sans-serif",
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "4rem",
-          fontWeight: "800",
-          marginBottom: "10px",
-          textShadow: "0 4px 20px rgba(0,0,0,0.3)",
-        }}
-      >
-        Coming Soon
-      </h1>
+    <main>
+      {/* HERO SECTION ONLY */}
+      <section className="hero-section">
+        <div className="container hero-container">
 
-      <p
-        style={{
-          fontSize: "1.4rem",
-          opacity: 0.9,
-          maxWidth: "700px",
-          marginBottom: "40px",
-        }}
-      >
-        We’re crafting something exciting. Stay tuned — big things are on the way.
-      </p>
+          <div className="hero-content">
+            <p className="badge">Demo Prototype · Gelephu Mindfulness City</p>
 
-      {/* Animated glowing circle loader */}
-      <div
-        style={{
-          width: "60px",
-          height: "60px",
-          borderRadius: "50%",
-          border: "6px solid rgba(255,255,255,0.3)",
-          borderTopColor: "#fff",
-          animation: "spin 1s linear infinite",
-        }}
-      ></div>
+            <h1 className="hero-headline">GMC Token Economy Prototype</h1>
 
-      <style>
-        {`
-          @keyframes spin {
-            to { transform: rotate(360deg); }
-          }
-        `}
-      </style>
-    </div>
+            <p className="hero-subline">
+              Exploring tokenization for transparent and equitable land compensation in
+              Gelephu Mindfulness City — a new standard for mindful governance.
+            </p>
+
+            <div className="hero-actions">
+              <a href="/login" className="button primary-button">Launch Prototype</a>
+              <a href="#about" className="button secondary-button">Learn More</a>
+            </div>
+          </div>
+
+          <div className="hero-visual">
+            <div className="mock-dashboard-card">
+              <p className="card-title">Token Overview (Simulated)</p>
+
+              <div className="data-point">
+                <span className="label">Total Tokens Issued</span>
+                <span className="value">1,000,000 GMC</span>
+              </div>
+
+              <div className="data-point">
+                <span className="label">Current Value</span>
+                <span className="value">1 GMC = 0.85 USD</span>
+              </div>
+
+              <div className="data-point">
+                <span className="label">Citizen Holders</span>
+                <span className="value">1,245</span>
+              </div>
+
+              <div className="data-point">
+                <span className="label">Total Value Locked</span>
+                <span className="value">$850,000 USD</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
   );
-}
+};
 
 export default Home;

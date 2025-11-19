@@ -1,0 +1,312 @@
+/* ------------------------------------------------
+   GMC Token Prototype Landing Page - Hero Only
+   Clean, Tighter, Premium Hero Styling
+   ------------------------------------------------ */
+
+/* --- Tokens: Colors & Spacing --- */
+:root {
+    /* Spacing (8pt scale) */
+    --space-2: 4px;
+    --space-4: 8px;
+    --space-6: 12px;
+    --space-8: 16px;
+    --space-12: 24px;
+    --space-16: 32px;
+    --space-24: 48px;
+    --space-32: 64px;
+
+    /* Palette */
+    --color-deep-green: #004D40;
+    --color-turquoise: #00897B;
+    --color-mint-soft: #B2DFDB;
+    --color-text-light: #FFFFFF;
+    --color-text-subtle: rgba(255, 255, 255, 0.85);
+
+    /* Buttons */
+    --btn-radius: 999px;
+
+    /* Effects */
+    --transition-fast: 0.2s ease-out;
+    --transition-med: 0.3s ease-out;
+}
+
+/* --- Base / Typography --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+    background-color: #F5F7F8;
+    color: #222;
+    line-height: 1.6;
+}
+
+h1 {
+    margin: 0 0 var(--space-12);
+    font-size: clamp(2.4rem, 3vw + 1.4rem, 3.6rem);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+p {
+    margin: 0 0 var(--space-8);
+}
+
+/* Layout helper */
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 var(--space-8);
+}
+
+/* ------------------------------------------------
+   HERO SECTION
+   ------------------------------------------------ */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: var(--color-text-light);
+
+    /* Soft gradient with subtle angle */
+    background: radial-gradient(circle at top left, #26A69A 0, #004D40 40%, #002D2A 100%);
+}
+
+/* Decorative gradient glow */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(178, 223, 219, 0.22) 0, transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(0, 137, 123, 0.18) 0, transparent 60%);
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+/* Very subtle animated overlay for “alive” feeling */
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.08) 0, transparent 50%);
+    opacity: 0.6;
+    filter: blur(6px);
+    mix-blend-mode: soft-light;
+    animation: heroGlow 12s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes heroGlow {
+    0% {
+        transform: translate3d(-5%, 0, 0) scale(1);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translate3d(5%, -3%, 0) scale(1.08);
+        opacity: 0.75;
+    }
+}
+
+/* Content layout */
+.hero-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-24);
+    padding: var(--space-32) 0;
+}
+
+/* Text block */
+.hero-content {
+    max-width: 640px;
+    text-align: center;
+}
+
+/* Badge */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-12);
+    margin-bottom: var(--space-8);
+    border-radius: 999px;
+
+    background-color: rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-mint-soft);
+}
+
+/* Sub headline */
+.hero-subline {
+    font-size: 1rem;
+    max-width: 520px;
+    margin: 0 auto var(--space-16);
+    color: var(--color-text-subtle);
+}
+
+/* Actions */
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-8);
+}
+
+/* Buttons */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: var(--space-8) var(--space-24);
+    border-radius: var(--btn-radius);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform var(--transition-fast),
+        box-shadow var(--transition-fast),
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+/* Focus visible – keyboard accessibility */
+.button:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 2px;
+}
+
+/* Primary CTA */
+.primary-button {
+    background: linear-gradient(135deg, var(--color-turquoise), #26A69A);
+    color: var(--color-text-light);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.primary-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #26A69A, var(--color-deep-green));
+}
+
+/* Secondary CTA */
+.secondary-button {
+    background-color: transparent;
+    color: var(--color-text-subtle);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.secondary-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-text-light);
+}
+
+/* Right visual block */
+.hero-visual {
+    width: 100%;
+    max-width: 380px;
+    backdrop-filter: blur(10px);
+}
+
+/* Dashboard mock card */
+.mock-dashboard-card {
+    background: linear-gradient(145deg,
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.2));
+    border-radius: 20px;
+    padding: var(--space-16);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Dashboard header */
+.card-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-mint-soft);
+    padding-bottom: var(--space-8);
+    margin-bottom: var(--space-8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* Metric rows */
+.data-point {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: var(--space-6) 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+    font-size: 0.9rem;
+}
+
+.data-point:last-child {
+    border-bottom: none;
+}
+
+.data-point .label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.data-point .value {
+    font-weight: 600;
+    color: var(--color-text-light);
+}
+
+/* ------------------------------------------------
+   RESPONSIVE BEHAVIOUR
+   ------------------------------------------------ */
+
+@media (min-width: 768px) {
+    .hero-container {
+        flex-direction: row;
+        align-items: center;
+        gap: var(--space-32);
+    }
+
+    .hero-content {
+        flex: 1;
+        text-align: left;
+    }
+
+    .hero-subline {
+        margin-left: 0;
+    }
+
+    .hero-actions {
+        justify-content: flex-start;
+    }
+
+    .hero-visual {
+        flex: 0 0 340px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-container {
+        gap: var(--space-32);
+    }
+}
