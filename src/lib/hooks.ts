@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 
 // Hook for smooth navigation with loading states
 export function useNavigation() {
@@ -21,8 +21,8 @@ export function useNavigation() {
 
 // Hook for managing async action states
 export function useAsyncAction() {
-  const [isLoading, setIsLoading] = require('react').useState(false);
-  const [error, setError] = require('react').useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const execute = useCallback(
     async (fn: () => Promise<void>) => {

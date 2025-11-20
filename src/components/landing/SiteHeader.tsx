@@ -32,6 +32,14 @@ const SiteHeader: React.FC = () => {
     }
   };
 
+  const handleTeamNavigation = () => {
+    navigate('/team');
+    // Scroll to top when team page loads
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 300);
+  };
+
   const handleDocumentation = () => {
     showInfo('Opening documentation...');
   };
@@ -60,9 +68,12 @@ const SiteHeader: React.FC = () => {
             >
               FAQ
             </button>
-            <Link to="/team" className="text-muted-foreground hover:text-primary transition-colors duration-200">
+            <button
+              onClick={handleTeamNavigation}
+              className="text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer bg-transparent border-none"
+            >
               Team
-            </Link>
+            </button>
           </nav>
 
           <div className="flex items-center gap-4">
