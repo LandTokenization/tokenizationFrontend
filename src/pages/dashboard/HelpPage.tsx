@@ -76,7 +76,7 @@ export default function HelpPage() {
                     Important Demo Disclaimer
                 </p>
                 <p className="text-sm text-slate-600">
-                    This prototype is built solely for the Innovate for GMC / Pelsup
+                    This prototype is built solely for the Innovate for GMC / Land Tokenization
                     demonstration. It is not a financial product, not an official
                     government system, and not a legal representation of land, value, or
                     compensation. All figures are illustrative and may change as the

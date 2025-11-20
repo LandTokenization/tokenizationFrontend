@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { cn } from './utils';
 import Button from './Button';
@@ -22,22 +23,22 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => (
           <X className="h-6 w-6" />
         </button>
         <nav className="flex flex-col gap-4">
-          <a
-            href="#about"
+          <Link
+            to="/#about"
             onClick={onClose}
             className="text-lg font-medium hover:text-primary transition-colors"
           >
             About
-          </a>
-          <a
-            href="#faq"
+          </Link>
+          <Link
+            to="/#faq"
             onClick={onClose}
             className="text-lg font-medium hover:text-primary transition-colors"
           >
             FAQ
-          </a>
+          </Link>
           <a
-            href="#team"
+            href="/team"
             onClick={onClose}
             className="text-lg font-medium hover:text-primary transition-colors"
           >
@@ -47,6 +48,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => (
           <Button variant="outline" className="w-full justify-start">
             Documentation
           </Button>
+          <a href="/login" onClick={onClose} className="cursor-pointer">
+            <Button className="w-full justify-start">
+              Login
+            </Button>
+          </a>
         </nav>
       </div>
     </div>

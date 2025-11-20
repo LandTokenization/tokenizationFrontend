@@ -3,7 +3,6 @@ import SiteHeader from '../components/landing/SiteHeader';
 import Hero from '../components/landing/Hero';
 import About from '../components/landing/About';
 import FAQ from '../components/landing/FAQ';
-import Team from '../components/landing/Team';
 import SiteFooter from '../components/landing/SiteFooter';
 
 const Home: React.FC = () => {
@@ -14,7 +13,6 @@ const Home: React.FC = () => {
         <Hero />
         <About />
         <FAQ />
-        <Team />
       </main>
       <SiteFooter />
     </div>

@@ -1,0 +1,102 @@
+/* Smooth page transitions */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply animations to main content */
+main {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/* Smooth hover effects for interactive elements */
+button,
+a,
+input {
+  transition: all 0.2s ease-out;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Smooth shadow transitions */
+.hover\:shadow-md:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus visible outline */
+:focus-visible {
+  outline: 2px solid #0f172a;
+  outline-offset: 2px;
+}
+
+/* Smooth backdrop blur */
+header {
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+/* Active scale animation for buttons */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Smooth input focus */
+input:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+  border-color: #0f172a;
+}
+
+/* Tooltip-like hover effects */
+[role="tooltip"] {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Smooth modal transitions */
+.modal-enter {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Scroll smooth behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better text selection */
+::selection {
+  background-color: #0f172a;
+  color: white;
+}
+
+/* Accessibility: reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

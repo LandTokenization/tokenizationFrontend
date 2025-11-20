@@ -1,7 +1,9 @@
 import React from 'react';
-import { Users, Linkedin, Twitter, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Users, Linkedin, Twitter, Github, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from './Card';
 import Badge from './Badge';
+import Button from './Button';
 
 const Team: React.FC = () => {
   const team = [
@@ -79,6 +81,15 @@ const Team: React.FC = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <Link to="/team">
+            <Button size="lg" className="cursor-pointer">
+              View Full Team
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
