@@ -24,35 +24,46 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => (
         </button>
         <nav className="flex flex-col gap-4">
           <Link
-            to="/#about"
+            to="/"
+            onClick={onClose}
+            className="text-lg font-medium hover:text-primary transition-colors"
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
             onClick={onClose}
             className="text-lg font-medium hover:text-primary transition-colors"
           >
             About
           </Link>
           <Link
-            to="/#faq"
+            to="/faq"
             onClick={onClose}
             className="text-lg font-medium hover:text-primary transition-colors"
           >
             FAQ
           </Link>
-          <a
-            href="/team"
+          <Link
+            to="/team"
             onClick={onClose}
             className="text-lg font-medium hover:text-primary transition-colors"
           >
             Team
-          </a>
+          </Link>
+          <Link
+            to="/links"
+            onClick={onClose}
+            className="text-lg font-medium hover:text-primary transition-colors"
+          >
+            Links
+          </Link>
           <div className="h-px bg-border my-2" />
-          <Button variant="outline" className="w-full justify-start">
-            Documentation
-          </Button>
-          <a href="/login" onClick={onClose} className="cursor-pointer">
+          <Link to="/login" onClick={onClose} className="cursor-pointer">
             <Button className="w-full justify-start">
               Login
             </Button>
-          </a>
+          </Link>
         </nav>
       </div>
     </div>

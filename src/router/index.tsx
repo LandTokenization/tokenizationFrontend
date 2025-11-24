@@ -3,9 +3,12 @@ import { Routes, Route, Navigate } from "react-router-dom";
 /* --------------------------
    PUBLIC PAGES
 --------------------------- */
-import Home from "../pages/Home";
+import HomePage from "../pages/HomePage";
 import LoginPage from "../pages/authentication/login";
 import TeamPage from "../pages/Team";
+import AboutPagePublic from "../pages/AboutPage";
+import FAQPagePublic from "../pages/FAQPage";
+import LinksPage from "../pages/LinksPage";
 
 /* --------------------------
    USER DASHBOARD
@@ -38,9 +41,12 @@ export default function AppRouter() {
     return (
         <Routes>
             {/* PUBLIC ROUTES */}
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/team" element={<TeamPage />} />
+            <Route path="/about" element={<AboutPagePublic />} />
+            <Route path="/faq" element={<FAQPagePublic />} />
+            <Route path="/links" element={<LinksPage />} />
 
             {/* USER DASHBOARD ROUTES */}
             <Route path="/dashboard" element={<DashboardLayout />}>

@@ -1,0 +1,16 @@
+/* Animated Background Canvas Styles */
+.animated-background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+html, body {
+  background: #0a0a0a;
+}

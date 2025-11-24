@@ -3,7 +3,7 @@ import SiteHeader from '../components/landing/SiteHeader';
 import Hero from '../components/landing/Hero';
 import SiteFooter from '../components/landing/SiteFooter';
 
-const Home: React.FC = () => {
+const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground font-sans selection:bg-primary/20">
       <SiteHeader />
@@ -15,4 +15,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomePage;

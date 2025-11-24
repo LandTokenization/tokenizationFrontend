@@ -1,18 +1,18 @@
 import React from 'react';
 import SiteHeader from '../components/landing/SiteHeader';
-import Hero from '../components/landing/Hero';
+import About from '../components/landing/About';
 import SiteFooter from '../components/landing/SiteFooter';
 
-const Home: React.FC = () => {
+const AboutPagePublic: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground font-sans selection:bg-primary/20">
       <SiteHeader />
       <main className="flex-1">
-        <Hero />
+        <About />
       </main>
       <SiteFooter />
     </div>
   );
 };
 
-export default Home;
+export default AboutPagePublic;
