@@ -5,6 +5,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 --------------------------- */
 import Home from "../pages/Home";
 import LoginPage from "../pages/authentication/login";
+import TeamPage from "../pages/Team";
 
 /* --------------------------
    USER DASHBOARD
@@ -39,6 +40,7 @@ export default function AppRouter() {
             {/* PUBLIC ROUTES */}
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/team" element={<TeamPage />} />
 
             {/* USER DASHBOARD ROUTES */}
             <Route path="/dashboard" element={<DashboardLayout />}>

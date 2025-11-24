@@ -7,7 +7,7 @@ export default function AboutPage() {
                     About the GMC Token Prototype
                 </h1>
                 <p className="text-sm text-slate-500">
-                    Developed under the Innovate for GMC • Pelsup Programme to explore
+                    Developed under the Innovate for GMC • Land Tokenization Programme to explore
                     transparent and mindful compensation mechanisms.
                 </p>
             </div>
@@ -60,7 +60,7 @@ export default function AboutPage() {
                     This application is a demonstration only. It is not a valuation tool,
                     not a financial product, and not an official government platform.
                     All token balances, land details, and prices shown within the demo
-                    are simulated for illustration as part of the Innovate for GMC Pelsup
+                    are simulated for illustration as part of the Innovate for GMC Land Tokenization
                     Programme.
                 </p>
             </div>
