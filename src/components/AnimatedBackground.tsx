@@ -31,77 +31,72 @@ const AnimatedBackground: React.FC = () => {
       ctx.fillStyle = '#0a0a0a';
       ctx.fillRect(0, 0, width, height);
 
-      // Grid parameters
-      const gridSize = 50;
-      const waveAmplitude = 35;
-      const waveFrequency = 0.08;
-
-      ctx.strokeStyle = 'rgba(0, 200, 220, 0.3)';
-      ctx.lineWidth = 1.5;
-
-      // Draw vertical wave lines
-      for (let x = 0; x < width; x += gridSize) {
-        ctx.beginPath();
-        for (let y = 0; y < height; y += 2) {
-          const wave = Math.sin((y * waveFrequency) + time) * waveAmplitude;
-          const xOffset = x + wave;
-          if (y === 0) {
-            ctx.moveTo(xOffset, y);
-          } else {
-            ctx.lineTo(xOffset, y);
-          }
-        }
-        ctx.stroke();
+      // Create subtle flowing particles/orbs effect
+      const particles = [];
+      const particleCount = 8;
+      
+      for (let i = 0; i < particleCount; i++) {
+        const angle = (i / particleCount) * Math.PI * 2 + time * 0.1;
+        const distance = 200 + Math.sin(time * 0.2 + i) * 100;
+        const x = width / 2 + Math.cos(angle) * distance;
+        const y = height / 2 + Math.sin(angle) * distance;
+        
+        particles.push({ x, y, index: i });
       }
 
-      // Draw horizontal wave lines
-      for (let y = 0; y < height; y += gridSize) {
+      // Draw smooth flowing lines connecting particles
+      ctx.strokeStyle = 'rgba(255, 200, 80, 0.08)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(particles[0].x, particles[0].y);
+      for (let i = 1; i < particles.length; i++) {
+        ctx.lineTo(particles[i].x, particles[i].y);
+      }
+      ctx.closePath();
+      ctx.stroke();
+
+      // Draw soft glowing circles at each particle point
+      for (let i = 0; i < particles.length; i++) {
+        const particle = particles[i];
+        const glow = ctx.createRadialGradient(particle.x, particle.y, 0, particle.x, particle.y, 80);
+        glow.addColorStop(0, 'rgba(255, 200, 80, 0.12)');
+        glow.addColorStop(0.5, 'rgba(255, 180, 60, 0.04)');
+        glow.addColorStop(1, 'rgba(255, 160, 40, 0)');
+        ctx.fillStyle = glow;
         ctx.beginPath();
-        for (let x = 0; x < width; x += 2) {
-          const wave = Math.sin((x * waveFrequency) + time) * waveAmplitude;
-          const yOffset = y + wave;
+        ctx.arc(particle.x, particle.y, 80, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // Draw slow-moving background waves
+      ctx.strokeStyle = 'rgba(200, 160, 80, 0.06)';
+      ctx.lineWidth = 1;
+      
+      for (let waveIndex = 0; waveIndex < 3; waveIndex++) {
+        ctx.beginPath();
+        const waveHeight = 30 + waveIndex * 20;
+        const waveSpeed = 0.05 + waveIndex * 0.02;
+        const baseY = height * (0.25 + waveIndex * 0.25);
+        
+        for (let x = 0; x < width; x += 5) {
+          const y = baseY + Math.sin((x * 0.005) + time * waveSpeed) * waveHeight;
           if (x === 0) {
-            ctx.moveTo(x, yOffset);
+            ctx.moveTo(x, y);
           } else {
-            ctx.lineTo(x, yOffset);
+            ctx.lineTo(x, y);
           }
         }
         ctx.stroke();
       }
 
-      // Draw multiple glowing wave bands
-      for (let i = 0; i < 3; i++) {
-        const waveY = (height * (0.3 + i * 0.2)) + Math.sin(time * (0.3 + i * 0.1)) * 40;
-        const gradient = ctx.createLinearGradient(0, waveY - 60, 0, waveY + 60);
-        gradient.addColorStop(0, 'rgba(0, 200, 255, 0)');
-        gradient.addColorStop(0.5, 'rgba(0, 200, 255, 0.2)');
-        gradient.addColorStop(1, 'rgba(0, 200, 255, 0)');
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, waveY - 60, width, 120);
-      }
+      // Draw subtle radial gradient from center
+      const centerGradient = ctx.createRadialGradient(width / 2, height / 2, 0, width / 2, height / 2, Math.sqrt(width * width + height * height) / 2);
+      centerGradient.addColorStop(0, 'rgba(255, 200, 80, 0.03)');
+      centerGradient.addColorStop(1, 'rgba(255, 200, 80, 0)');
+      ctx.fillStyle = centerGradient;
+      ctx.fillRect(0, 0, width, height);
 
-      // Draw "Gelephu Mindfulness City Initiative" text repeatedly across background
-      ctx.font = 'bold 24px Arial';
-      ctx.fillStyle = 'rgba(180, 180, 0, 0.15)';
-      ctx.textAlign = 'left';
-      ctx.textBaseline = 'top';
-
-      const text = 'Gelephu Mindfulness City Initiative';
-      const textWidth = ctx.measureText(text).width;
-      const spacing = textWidth + 100;
-
-      // Draw text in multiple rows and columns
-      for (let y = -100; y < height + 100; y += 120) {
-        for (let x = -spacing; x < width + spacing; x += spacing) {
-          const offsetY = y + Math.sin((x + time * 50) * 0.01) * 15;
-          ctx.save();
-          ctx.globalAlpha = 0.12 + Math.sin(time * 0.5 + x * 0.001) * 0.05;
-          ctx.fillText(text, x, offsetY);
-          ctx.restore();
-        }
-      }
-
-      time += 0.015;
+      time += 0.01;
       animationId = requestAnimationFrame(draw);
     };
 

@@ -718,85 +718,213 @@ html {
 }
 
 /*
-medusa
+AMBIENT BACKGROUND - Dynamic Gradient Mesh Animation
 */
-.medusa-fallback,
+
+/* Main background container */
 .medusa-main {
-    width: min(80vw, 120vh);
-    aspect-ratio: 1 / 1;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     pointer-events: none;
+    background: linear-gradient(-45deg, #0a0e27, #1a2847, #0f3a5f, #0a0e27);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+    overflow: hidden;
 }
 
-@media (max-width: 1200px) {
-    .medusa-fallback,
-    .medusa-main {
-        width: calc(100% - 1rem);
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
+/* Fallback for non-supporting browsers */
 .medusa-fallback {
     display: none;
-    color: white;
-    padding: 2rem 2rem;
-    font-family: system-ui, sans-serif;
-    font-size: clamp(12px, 3vw, 3rem);
-    align-items: center;
-    justify-content: center;
-    position: fixed;
 }
 
-.medusa-fallback .bg {
-    background-color: #074fa3;
-    position: absolute;
-    aspect-ratio: 1 / 1;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 2rem 2rem rgba(0, 0, 0, 0.5);
-}
-
-.medusa-fallback .message {
-    position: absolute;
-}
-
-@supports not (offset-path: shape(from 0 0, move to 0 0)) {
-    .medusa-main {
-        display: none;
-    }
-
-    .medusa-fallback {
-        display: flex;
-    }
-}
-
-.medusa-main {
-    position: fixed;
-    background: none;
-    transform: translate(-50%, -50%) translateY(-10%);
-    animation: medusa-main-animation 10s ease-in-out infinite;
-}
-
-@keyframes medusa-main-animation {
-    50% {
-        transform: translate(-50%, -50%) translateY(10%);
-    }
-}
-
+/* Animated gradient orbs */
 .medusa-wrapper {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
-    animation: medusa-rotate-animation 10s ease-in-out infinite;
+    top: 0;
+    left: 0;
 }
 
-@keyframes medusa-rotate-animation {
-    100% {
-        transform: rotate(360deg);
+/* Orb 1 - Top left corner, golden yellow */
+.medusa-wrapper .medusa:nth-child(1) {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at 35% 35%, rgba(255, 200, 0, 0.25), rgba(255, 180, 0, 0.08) 40%, transparent 70%);
+    border-radius: 50%;
+    top: -200px;
+    left: -200px;
+    filter: blur(60px);
+    animation: orbit-1 25s ease-in-out infinite;
+}
+
+/* Orb 2 - Bottom right, warm yellow-orange */
+.medusa-wrapper .medusa:nth-child(2) {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle at 40% 40%, rgba(255, 150, 0, 0.2), rgba(255, 120, 0, 0.05) 45%, transparent 75%);
+    border-radius: 50%;
+    bottom: -250px;
+    right: -150px;
+    filter: blur(70px);
+    animation: orbit-2 30s ease-in-out infinite;
+}
+
+/* Orb 3 - Middle right, bright golden yellow */
+.medusa-wrapper .medusa:nth-child(3) {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle at 45% 45%, rgba(255, 220, 0, 0.22), rgba(255, 200, 0, 0.06) 50%, transparent 80%);
+    border-radius: 50%;
+    top: 20%;
+    right: -100px;
+    filter: blur(65px);
+    animation: orbit-3 28s ease-in-out infinite reverse;
+}
+
+/* Orb 4 - Bottom left, amber yellow */
+.medusa-wrapper .medusa:nth-child(4) {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 190, 0, 0.18), rgba(255, 170, 0, 0.04) 55%, transparent 85%);
+    border-radius: 50%;
+    bottom: -100px;
+    left: 5%;
+    filter: blur(55px);
+    animation: orbit-4 26s ease-in-out infinite;
+}
+
+/* Orb 5 - Top right, pale golden yellow */
+.medusa-wrapper .medusa:nth-child(5) {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 230, 100, 0.15), rgba(255, 210, 50, 0.03) 60%, transparent 90%);
+    border-radius: 50%;
+    top: -50px;
+    right: 10%;
+    filter: blur(60px);
+    animation: orbit-5 32s ease-in-out infinite reverse;
+}
+
+/* Rest of the orbs are hidden */
+.medusa-wrapper .medusa:nth-child(n+6) {
+    display: none;
+}
+
+/* Orbital animations with different paths */
+@keyframes orbit-1 {
+    0%, 100% {
+        transform: translate(0, 0);
+        opacity: 0.5;
+    }
+    25% {
+        transform: translate(100px, 150px);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translate(50px, 300px);
+        opacity: 0.4;
+    }
+    75% {
+        transform: translate(150px, 100px);
+        opacity: 0.6;
+    }
+}
+
+@keyframes orbit-2 {
+    0%, 100% {
+        transform: translate(0, 0);
+        opacity: 0.4;
+    }
+    25% {
+        transform: translate(-100px, -150px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translate(-200px, -100px);
+        opacity: 0.35;
+    }
+    75% {
+        transform: translate(-50px, -200px);
+        opacity: 0.5;
+    }
+}
+
+@keyframes orbit-3 {
+    0%, 100% {
+        transform: translate(0, 0);
+        opacity: 0.45;
+    }
+    25% {
+        transform: translate(-150px, 100px);
+        opacity: 0.65;
+    }
+    50% {
+        transform: translate(-100px, 200px);
+        opacity: 0.4;
+    }
+    75% {
+        transform: translate(-200px, 50px);
+        opacity: 0.55;
+    }
+}
+
+@keyframes orbit-4 {
+    0%, 100% {
+        transform: translate(0, 0);
+        opacity: 0.5;
+    }
+    25% {
+        transform: translate(120px, -100px);
+        opacity: 0.65;
+    }
+    50% {
+        transform: translate(80px, -150px);
+        opacity: 0.35;
+    }
+    75% {
+        transform: translate(150px, -50px);
+        opacity: 0.55;
+    }
+}
+
+@keyframes orbit-5 {
+    0%, 100% {
+        transform: translate(0, 0);
+        opacity: 0.4;
+    }
+    25% {
+        transform: translate(-80px, 120px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translate(-120px, 100px);
+        opacity: 0.3;
+    }
+    75% {
+        transform: translate(-60px, 150px);
+        opacity: 0.5;
     }
 }
 
@@ -983,8 +1111,32 @@ medusa
     );
 }
 
-@keyframes medusa-inner-animation {
-    to {
-        offset-distance: 100%;
+/* Landing Page Styles - Tailwind CSS Animations */
+
+@layer utilities {
+  @keyframes accordion-down {
+    from {
+      height: 0;
     }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  .animate-accordion-down {
+    animation: accordion-down 0.2s ease-out;
+  }
+
+  .animate-accordion-up {
+    animation: accordion-up 0.2s ease-out;
+  }
 }
