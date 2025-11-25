@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium bg-muted/50 animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
             <Sparkles className="h-4 w-4 mr-2 text-primary animate-spin" style={{ animationDuration: '3s' }} />
-            <span className="font-medium">Gelephu Mindfulness City Initiative</span>
+            <span className="font-medium">Gelephu Mindfulness City, Pelsub Initiative</span>
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight animate-fadeInUp" style={{ animationDelay: '0.2s' }}>

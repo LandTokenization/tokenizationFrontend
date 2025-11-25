@@ -32,7 +32,7 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-background">
+    <section id="faq" className="py-24 bg-transparent">
       <div className="container mx-auto px-4 md:px-6 max-w-3xl">
         <div className="text-center mb-12 space-y-4">
           <Badge variant="outline" className="px-4 py-1">
