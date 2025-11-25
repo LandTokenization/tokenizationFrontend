@@ -32,10 +32,10 @@ const LinksPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground font-sans selection:bg-primary/20">
+    <div className="min-h-screen flex flex-col bg-transparent text-foreground font-sans selection:bg-primary/20">
       <SiteHeader />
       <main className="flex-1">
-        <section className="py-24 bg-background">
+        <section className="py-24 bg-transparent">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-16 space-y-4">

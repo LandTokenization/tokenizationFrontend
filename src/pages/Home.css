@@ -28,6 +28,237 @@
     /* Effects */
     --transition-fast: 0.2s ease-out;
     --transition-med: 0.3s ease-out;
+
+    /* Medusa properties */
+    --j0s-x: 43.75%;
+    --j0s-y: 14.55%;
+    --j1s-x: 57.79%;
+    --j1s-y: 14.85%;
+    --j2s-x: 70.65%;
+    --j2s-y: 20.51%;
+    --j3s-x: 80.36%;
+    --j3s-y: 30.66%;
+    --j4s-x: 85.45%;
+    --j4s-y: 43.75%;
+    --j5s-x: 85.15%;
+    --j5s-y: 57.79%;
+    --j6s-x: 79.49%;
+    --j6s-y: 70.65%;
+    --j7s-x: 69.34%;
+    --j7s-y: 80.36%;
+    --j8s-x: 56.25%;
+    --j8s-y: 85.45%;
+    --j9s-x: 42.21%;
+    --j9s-y: 85.15%;
+    --j10s-x: 29.35%;
+    --j10s-y: 79.49%;
+    --j11s-x: 19.64%;
+    --j11s-y: 69.34%;
+    --j12s-x: 14.55%;
+    --j12s-y: 56.25%;
+    --j13s-x: 14.85%;
+    --j13s-y: 42.21%;
+    --j14s-x: 20.51%;
+    --j14s-y: 29.35%;
+    --j15s-x: 30.66%;
+    --j15s-y: 19.64%;
+    --c0sa-x: 46.51%;
+    --c0sa-y: 4.33%;
+    --c0sb-x: 55.48%;
+    --c0sb-y: 4.53%;
+    --c1sa-x: 58.8%;
+    --c1sa-y: 23.1%;
+    --c1sb-x: 63.88%;
+    --c1sb-y: 25.34%;
+    --c2sa-x: 79.82%;
+    --c2sa-y: 15.24%;
+    --c2sb-x: 86.03%;
+    --c2sb-y: 21.72%;
+    --c3sa-x: 75.24%;
+    --c3sa-y: 37.21%;
+    --c3sb-x: 77.25%;
+    --c3sb-y: 42.38%;
+    --c4sa-x: 95.67%;
+    --c4sa-y: 46.51%;
+    --c4sb-x: 95.47%;
+    --c4sb-y: 55.48%;
+    --c5sa-x: 76.9%;
+    --c5sa-y: 58.8%;
+    --c5sb-x: 74.66%;
+    --c5sb-y: 63.88%;
+    --c6sa-x: 84.76%;
+    --c6sa-y: 79.82%;
+    --c6sb-x: 78.28%;
+    --c6sb-y: 86.03%;
+    --c7sa-x: 62.79%;
+    --c7sa-y: 75.24%;
+    --c7sb-x: 57.62%;
+    --c7sb-y: 77.25%;
+    --c8sa-x: 53.49%;
+    --c8sa-y: 95.67%;
+    --c8sb-x: 44.52%;
+    --c8sb-y: 95.47%;
+    --c9sa-x: 41.2%;
+    --c9sa-y: 76.9%;
+    --c9sb-x: 36.12%;
+    --c9sb-y: 74.66%;
+    --c10sa-x: 20.18%;
+    --c10sa-y: 84.76%;
+    --c10sb-x: 13.97%;
+    --c10sb-y: 78.28%;
+    --c11sa-x: 24.76%;
+    --c11sa-y: 62.79%;
+    --c11sb-x: 22.75%;
+    --c11sb-y: 57.62%;
+    --c12sa-x: 4.33%;
+    --c12sa-y: 53.49%;
+    --c12sb-x: 4.53%;
+    --c12sb-y: 44.52%;
+    --c13sa-x: 23.1%;
+    --c13sa-y: 41.2%;
+    --c13sb-x: 25.34%;
+    --c13sb-y: 36.12%;
+    --c14sa-x: 15.24%;
+    --c14sa-y: 20.18%;
+    --c14sb-x: 21.72%;
+    --c14sb-y: 13.97%;
+    --c15sa-x: 37.21%;
+    --c15sa-y: 24.76%;
+    --c15sb-x: 42.38%;
+    --c15sb-y: 22.75%;
+    --j0e-x: 44.79%;
+    --j0e-y: 20.46%;
+    --j1e-x: 56.49%;
+    --j1e-y: 20.71%;
+    --j2e-x: 67.21%;
+    --j2e-y: 25.43%;
+    --j3e-x: 75.3%;
+    --j3e-y: 33.88%;
+    --j4e-x: 79.54%;
+    --j4e-y: 44.79%;
+    --j5e-x: 79.29%;
+    --j5e-y: 56.49%;
+    --j6e-x: 74.57%;
+    --j6e-y: 67.21%;
+    --j7e-x: 66.12%;
+    --j7e-y: 75.3%;
+    --j8e-x: 55.21%;
+    --j8e-y: 79.54%;
+    --j9e-x: 43.51%;
+    --j9e-y: 79.29%;
+    --j10e-x: 32.79%;
+    --j10e-y: 74.57%;
+    --j11e-x: 24.7%;
+    --j11e-y: 66.12%;
+    --j12e-x: 20.46%;
+    --j12e-y: 55.21%;
+    --j13e-x: 20.71%;
+    --j13e-y: 43.51%;
+    --j14e-x: 25.43%;
+    --j14e-y: 32.79%;
+    --j15e-x: 33.88%;
+    --j15e-y: 24.7%;
+    --c0ea-x: 48.28%;
+    --c0ea-y: 27.57%;
+    --c0eb-x: 52.69%;
+    --c0eb-y: 27.66%;
+    --c1ea-x: 61.67%;
+    --c1ea-y: 14.36%;
+    --c1eb-x: 68.39%;
+    --c1eb-y: 17.32%;
+    --c2ea-x: 64.65%;
+    --c2ea-y: 32.92%;
+    --c2eb-x: 67.7%;
+    --c2eb-y: 36.11%;
+    --c3ea-x: 83.45%;
+    --c3ea-y: 33.05%;
+    --c3eb-x: 86.11%;
+    --c3eb-y: 39.9%;
+    --c4ea-x: 72.43%;
+    --c4ea-y: 48.28%;
+    --c4eb-x: 72.34%;
+    --c4eb-y: 52.69%;
+    --c5ea-x: 85.64%;
+    --c5ea-y: 61.67%;
+    --c5eb-x: 82.68%;
+    --c5eb-y: 68.39%;
+    --c6ea-x: 67.08%;
+    --c6ea-y: 64.65%;
+    --c6eb-x: 63.89%;
+    --c6eb-y: 67.7%;
+    --c7ea-x: 66.95%;
+    --c7ea-y: 83.45%;
+    --c7eb-x: 60.1%;
+    --c7eb-y: 86.11%;
+    --c8ea-x: 51.72%;
+    --c8ea-y: 72.43%;
+    --c8eb-x: 47.31%;
+    --c8eb-y: 72.34%;
+    --c9ea-x: 38.33%;
+    --c9ea-y: 85.64%;
+    --c9eb-x: 31.61%;
+    --c9eb-y: 82.68%;
+    --c10ea-x: 35.35%;
+    --c10ea-y: 67.08%;
+    --c10eb-x: 32.3%;
+    --c10eb-y: 63.89%;
+    --c11ea-x: 16.55%;
+    --c11ea-y: 66.95%;
+    --c11eb-x: 13.89%;
+    --c11eb-y: 60.1%;
+    --c12ea-x: 27.57%;
+    --c12ea-y: 51.72%;
+    --c12eb-x: 27.66%;
+    --c12eb-y: 47.31%;
+    --c13ea-x: 14.36%;
+    --c13ea-y: 38.33%;
+    --c13eb-x: 17.32%;
+    --c13eb-y: 31.61%;
+    --c14ea-x: 32.92%;
+    --c14ea-y: 35.35%;
+    --c14eb-x: 36.11%;
+    --c14eb-y: 32.3%;
+    --c15ea-x: 33.05%;
+    --c15ea-y: 16.55%;
+    --c15eb-x: 39.9%;
+    --c15eb-y: 13.89%;
+
+    --medusa-path: shape(
+        from var(--j0s-x) var(--j0s-y),
+        curve to var(--j1s-x) var(--j1s-y) with var(--c0sa-x) var(--c0sa-y) /
+            var(--c0sb-x) var(--c0sb-y),
+        curve to var(--j2s-x) var(--j2s-y) with var(--c1sa-x) var(--c1sa-y) /
+            var(--c1sb-x) var(--c1sb-y),
+        curve to var(--j3s-x) var(--j3s-y) with var(--c2sa-x) var(--c2sa-y) /
+            var(--c2sb-x) var(--c2sb-y),
+        curve to var(--j4s-x) var(--j4s-y) with var(--c3sa-x) var(--c3sa-y) /
+            var(--c3sb-x) var(--c3sb-y),
+        curve to var(--j5s-x) var(--j5s-y) with var(--c4sa-x) var(--c4sa-y) /
+            var(--c4sb-x) var(--c4sb-y),
+        curve to var(--j6s-x) var(--j6s-y) with var(--c5sa-x) var(--c5sa-y) /
+            var(--c5sb-x) var(--c5sb-y),
+        curve to var(--j7s-x) var(--j7s-y) with var(--c6sa-x) var(--c6sa-y) /
+            var(--c6sb-x) var(--c6sb-y),
+        curve to var(--j8s-x) var(--j8s-y) with var(--c7sa-x) var(--c7sa-y) /
+            var(--c7sb-x) var(--c7sb-y),
+        curve to var(--j9s-x) var(--j9s-y) with var(--c8sa-x) var(--c8sa-y) /
+            var(--c8sb-x) var(--c8sb-y),
+        curve to var(--j10s-x) var(--j10s-y) with var(--c9sa-x) var(--c9sa-y) /
+            var(--c9sb-x) var(--c9sb-y),
+        curve to var(--j11s-x) var(--j11s-y) with var(--c10sa-x) var(--c10sa-y) /
+            var(--c10sb-x) var(--c10sb-y),
+        curve to var(--j12s-x) var(--j12s-y) with var(--c11sa-x) var(--c11sa-y) /
+            var(--c11sb-x) var(--c11sb-y),
+        curve to var(--j13s-x) var(--j13s-y) with var(--c12sa-x) var(--c12sa-y) /
+            var(--c12sb-x) var(--c12sb-y),
+        curve to var(--j14s-x) var(--j14s-y) with var(--c13sa-x) var(--c13sa-y) /
+            var(--c13sb-x) var(--c13sb-y),
+        curve to var(--j15s-x) var(--j15s-y) with var(--c14sa-x) var(--c14sa-y) /
+            var(--c14sb-x) var(--c14sb-y),
+        curve to var(--j0s-x) var(--j0s-y) with var(--c15sa-x) var(--c15sa-y) /
+            var(--c15sb-x) var(--c15sb-y),
+        close
+    );
 }
 
 /* --- Base / Typography --- */
@@ -339,4 +570,421 @@ p {
   .animate-accordion-up {
     animation: accordion-up 0.2s ease-out;
   }
+}
+
+/* ================================================
+   MEDUSA BACKGROUND ANIMATION
+   ================================================ */
+
+html {
+    animation: 5s medusa-animation infinite ease-in-out;
+}
+
+@keyframes medusa-animation {
+    50% {
+        --j0s-x: var(--j0e-x);
+        --j0s-y: var(--j0e-y);
+        --j1s-x: var(--j1e-x);
+        --j1s-y: var(--j1e-y);
+        --j2s-x: var(--j2e-x);
+        --j2s-y: var(--j2e-y);
+        --j3s-x: var(--j3e-x);
+        --j3s-y: var(--j3e-y);
+        --j4s-x: var(--j4e-x);
+        --j4s-y: var(--j4e-y);
+        --j5s-x: var(--j5e-x);
+        --j5s-y: var(--j5e-y);
+        --j6s-x: var(--j6e-x);
+        --j6s-y: var(--j6e-y);
+        --j7s-x: var(--j7e-x);
+        --j7s-y: var(--j7e-y);
+        --j8s-x: var(--j8e-x);
+        --j8s-y: var(--j8e-y);
+        --j9s-x: var(--j9e-x);
+        --j9s-y: var(--j9e-y);
+        --j10s-x: var(--j10e-x);
+        --j10s-y: var(--j10e-y);
+        --j11s-x: var(--j11e-x);
+        --j11s-y: var(--j11e-y);
+        --j12s-x: var(--j12e-x);
+        --j12s-y: var(--j12e-y);
+        --j13s-x: var(--j13e-x);
+        --j13s-y: var(--j13e-y);
+        --j14s-x: var(--j14e-x);
+        --j14s-y: var(--j14e-y);
+        --j15s-x: var(--j15e-x);
+        --j15s-y: var(--j15e-y);
+        --c0sa-x: var(--c0ea-x);
+        --c0sa-y: var(--c0ea-y);
+        --c0sb-x: var(--c0eb-x);
+        --c0sb-y: var(--c0eb-y);
+        --c1sa-x: var(--c1ea-x);
+        --c1sa-y: var(--c1ea-y);
+        --c1sb-x: var(--c1eb-x);
+        --c1sb-y: var(--c1eb-y);
+        --c2sa-x: var(--c2ea-x);
+        --c2sa-y: var(--c2ea-y);
+        --c2sb-x: var(--c2eb-x);
+        --c2sb-y: var(--c2eb-y);
+        --c3sa-x: var(--c3ea-x);
+        --c3sa-y: var(--c3ea-y);
+        --c3sb-x: var(--c3eb-x);
+        --c3sb-y: var(--c3eb-y);
+        --c4sa-x: var(--c4ea-x);
+        --c4sa-y: var(--c4ea-y);
+        --c4sb-x: var(--c4eb-x);
+        --c4sb-y: var(--c4eb-y);
+        --c5sa-x: var(--c5ea-x);
+        --c5sa-y: var(--c5ea-y);
+        --c5sb-x: var(--c5eb-x);
+        --c5sb-y: var(--c5eb-y);
+        --c6sa-x: var(--c6ea-x);
+        --c6sa-y: var(--c6ea-y);
+        --c6sb-x: var(--c6eb-x);
+        --c6sb-y: var(--c6eb-y);
+        --c7sa-x: var(--c7ea-x);
+        --c7sa-y: var(--c7ea-y);
+        --c7sb-x: var(--c7eb-x);
+        --c7sb-y: var(--c7eb-y);
+        --c8sa-x: var(--c8ea-x);
+        --c8sa-y: var(--c8ea-y);
+        --c8sb-x: var(--c8eb-x);
+        --c8sb-y: var(--c8eb-y);
+        --c9sa-x: var(--c9ea-x);
+        --c9sa-y: var(--c9ea-y);
+        --c9sb-x: var(--c9eb-x);
+        --c9sb-y: var(--c9eb-y);
+        --c10sa-x: var(--c10ea-x);
+        --c10sa-y: var(--c10ea-y);
+        --c10sb-x: var(--c10eb-x);
+        --c10sb-y: var(--c10eb-y);
+        --c11sa-x: var(--c11ea-x);
+        --c11sa-y: var(--c11ea-y);
+        --c11sb-x: var(--c11eb-x);
+        --c11sb-y: var(--c11eb-y);
+        --c12sa-x: var(--c12ea-x);
+        --c12sa-y: var(--c12ea-y);
+        --c12sb-x: var(--c12eb-x);
+        --c12sb-y: var(--c12eb-y);
+        --c13sa-x: var(--c13ea-x);
+        --c13sa-y: var(--c13ea-y);
+        --c13sb-x: var(--c13eb-x);
+        --c13sb-y: var(--c13eb-y);
+        --c14sa-x: var(--c14ea-x);
+        --c14sa-y: var(--c14ea-y);
+        --c14sb-x: var(--c14eb-x);
+        --c14sb-y: var(--c14eb-y);
+        --c15sa-x: var(--c15ea-x);
+        --c15sa-y: var(--c15ea-y);
+        --c15sb-x: var(--c15eb-x);
+        --c15sb-y: var(--c15eb-y);
+    }
+}
+
+@media (max-width: 1400px), (max-height: 1400px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1200px), (max-height: 1200px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 992px), (max-height: 992px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 768px), (max-height: 768px) {
+    html {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 576px), (max-height: 576px) {
+    html {
+        font-size: 4px;
+    }
+}
+
+@media (max-width: 480px), (max-height: 480px) {
+    html {
+        font-size: 2px;
+    }
+}
+
+/*
+medusa
+*/
+.medusa-fallback,
+.medusa-main {
+    width: min(80vw, 120vh);
+    aspect-ratio: 1 / 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+    .medusa-fallback,
+    .medusa-main {
+        width: calc(100% - 1rem);
+    }
+}
+
+.medusa-fallback {
+    display: none;
+    color: white;
+    padding: 2rem 2rem;
+    font-family: system-ui, sans-serif;
+    font-size: clamp(12px, 3vw, 3rem);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.medusa-fallback .bg {
+    background-color: #074fa3;
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.medusa-fallback .message {
+    position: absolute;
+}
+
+@supports not (offset-path: shape(from 0 0, move to 0 0)) {
+    .medusa-main {
+        display: none;
+    }
+
+    .medusa-fallback {
+        display: flex;
+    }
+}
+
+.medusa-main {
+    position: fixed;
+    background: none;
+    transform: translate(-50%, -50%) translateY(-10%);
+    animation: medusa-main-animation 10s ease-in-out infinite;
+}
+
+@keyframes medusa-main-animation {
+    50% {
+        transform: translate(-50%, -50%) translateY(10%);
+    }
+}
+
+.medusa-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: medusa-rotate-animation 10s ease-in-out infinite;
+}
+
+@keyframes medusa-rotate-animation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.medusa-wrapper .medusa {
+    --_duration: 5s;
+    --_timing-function: ease-in-out;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.medusa-wrapper .medusa:nth-child(1) {
+    --_background-color: #074fa3;
+    --_animation-delay: 1s;
+    transform: scale(1);
+    animation: medusa-transform-animation-1 var(--_duration)
+        var(--_timing-function) infinite;
+}
+.medusa-wrapper .medusa:nth-child(2) {
+    --_background-color: #205ead;
+    --_animation-delay: 2s;
+    transform: scale(0.9);
+    animation: medusa-transform-animation-2 var(--_duration)
+        var(--_timing-function) infinite;
+}
+.medusa-wrapper .medusa:nth-child(3) {
+    --_background-color: #3e75bc;
+    --_animation-delay: 3s;
+    transform: scale(0.8);
+    animation: medusa-transform-animation-3 var(--_duration)
+        var(--_timing-function) infinite;
+}
+.medusa-wrapper .medusa:nth-child(4) {
+    --_background-color: #578ac9;
+    --_animation-delay: 4s;
+    transform: scale(0.7);
+    animation: medusa-transform-animation-4 var(--_duration)
+        var(--_timing-function) infinite;
+}
+.medusa-wrapper .medusa:nth-child(5) {
+    --_background-color: #6494d0;
+    --_animation-delay: 5s;
+    transform: scale(0.6);
+    animation: medusa-transform-animation-5 var(--_duration)
+        var(--_timing-function) infinite;
+}
+.medusa-wrapper .medusa:nth-child(6) {
+    --_background-color: #6a9ddb;
+    --_animation-delay: 6s;
+    transform: scale(0.5);
+    animation: medusa-transform-animation-6 var(--_duration)
+        var(--_timing-function) infinite;
+}
+.medusa-wrapper .medusa:nth-child(7) {
+    --_background-color: #79a4d9;
+    --_animation-delay: 7s;
+    transform: scale(0.4);
+    animation: medusa-transform-animation-7 var(--_duration)
+        var(--_timing-function) infinite;
+}
+.medusa-wrapper .medusa:nth-child(8) {
+    --_background-color: #86b0e1;
+    --_animation-delay: 8s;
+    transform: scale(0.3);
+    animation: medusa-transform-animation-8 var(--_duration)
+        var(--_timing-function) infinite;
+}
+.medusa-wrapper .medusa:nth-child(9) {
+    --_background-color: #8fb6e4;
+    --_animation-delay: 9s;
+    transform: scale(0.2);
+    animation: medusa-transform-animation-9 var(--_duration)
+        var(--_timing-function) infinite;
+}
+
+@keyframes medusa-transform-animation-1 {
+    50% {
+        transform: rotate(45deg) scale(1);
+    }
+}
+@keyframes medusa-transform-animation-2 {
+    50% {
+        transform: rotate(45deg) scale(0.9);
+    }
+}
+@keyframes medusa-transform-animation-3 {
+    50% {
+        transform: rotate(45deg) scale(0.8);
+    }
+}
+@keyframes medusa-transform-animation-4 {
+    50% {
+        transform: rotate(45deg) scale(0.7);
+    }
+}
+@keyframes medusa-transform-animation-5 {
+    50% {
+        transform: rotate(45deg) scale(0.6);
+    }
+}
+@keyframes medusa-transform-animation-6 {
+    50% {
+        transform: rotate(45deg) scale(0.5);
+    }
+}
+@keyframes medusa-transform-animation-7 {
+    50% {
+        transform: rotate(45deg) scale(0.4);
+    }
+}
+@keyframes medusa-transform-animation-8 {
+    50% {
+        transform: rotate(45deg) scale(0.3);
+    }
+}
+@keyframes medusa-transform-animation-9 {
+    50% {
+        transform: rotate(45deg) scale(0.2);
+    }
+}
+
+.medusa-wrapper .medusa .medusa-inner {
+    --_inner-speed: 25s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.medusa-wrapper .medusa .medusa-inner:first-child {
+    background-color: var(--_background-color);
+    clip-path: var(--medusa-path);
+}
+
+.medusa-wrapper .medusa .medusa-inner:not(:first-child)::before {
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--_background-color);
+    position: absolute;
+    offset-path: var(--medusa-path);
+    offset-distance: 0%;
+    border-radius: 50%;
+    offset-anchor: center calc(5rem * 0.25);
+    animation: medusa-inner-animation var(--_inner-speed) linear infinite;
+    animation-play-state: running;
+}
+
+.medusa-wrapper .medusa .medusa-inner:nth-child(2)::before {
+    animation-delay: calc(var(--_animation-delay) + calc(var(--_inner-speed) * 0));
+}
+.medusa-wrapper .medusa .medusa-inner:nth-child(3)::before {
+    animation-delay: calc(
+        var(--_animation-delay) + calc(var(--_inner-speed) * -0.125)
+    );
+}
+.medusa-wrapper .medusa .medusa-inner:nth-child(4)::before {
+    animation-delay: calc(
+        var(--_animation-delay) + calc(var(--_inner-speed) * -0.25)
+    );
+}
+.medusa-wrapper .medusa .medusa-inner:nth-child(5)::before {
+    animation-delay: calc(
+        var(--_animation-delay) + calc(var(--_inner-speed) * -0.375)
+    );
+}
+.medusa-wrapper .medusa .medusa-inner:nth-child(6)::before {
+    animation-delay: calc(
+        var(--_animation-delay) + calc(var(--_inner-speed) * -0.5)
+    );
+}
+.medusa-wrapper .medusa .medusa-inner:nth-child(7)::before {
+    animation-delay: calc(
+        var(--_animation-delay) + calc(var(--_inner-speed) * -0.625)
+    );
+}
+.medusa-wrapper .medusa .medusa-inner:nth-child(8)::before {
+    animation-delay: calc(
+        var(--_animation-delay) + calc(var(--_inner-speed) * -0.75)
+    );
+}
+.medusa-wrapper .medusa .medusa-inner:nth-child(9)::before {
+    animation-delay: calc(
+        var(--_animation-delay) + calc(var(--_inner-speed) * -0.875)
+    );
+}
+
+@keyframes medusa-inner-animation {
+    to {
+        offset-distance: 100%;
+    }
 }
