@@ -11,10 +11,10 @@ const About: React.FC = () => (
             Our Mission
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Bridging Tradition & <span className="text-primary">Technology</span>
+            About <span className="text-primary">Pelsub Initiative</span>
           </h2>
           <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
-            <p>
+            {/* <p>
               The Gelephu Mindfulness City (GMC) represents a visionary leap forward,
               integrating mindful, sustainable, and inclusive development principles.
             </p>
@@ -23,12 +23,18 @@ const About: React.FC = () => (
               and equitable participation of landowners affected by land acquisition. This
               idea reflects an aspiration to merge technology with social well-being and
               shared prosperity.
+            </p> */}
+            <p>
+              We are a Pelsung team under Innovate for GMC - Cohort 1, working on a policy and systems blueprint of recommendations that explores how the Royal Vision of Gelephu Mindfulness City could be operationalized in practice.
+            </p>
+            <p>
+              Our project proposes a transparent land tokenization framework that enables long-term partnership for landowners while creating pathways for broader national participation in GMC's economic growth.
             </p>
             <p className="font-medium text-foreground">
-              Our mission is to establish a comprehensive framework and a prototype system
-              that integrates governance, technology, and socio-economic value—linking
-              token issuance, valuation, and trading to measurable indicators of GMC's
-              development.
+              Alongside this, we present a non-monetary Token of Appreciation to honour selfless contributions by Bhutanese citizens and institutions engaged in nation-building. Through this blueprint, we present a conceptual model integrating valuation, digital systems, governance, and civic recognition as part of a youth-led innovation exercise.
+            </p>
+            <p className="text-sm text-muted-foreground italic">
+              This platform reflects our independent recommendations and learning under the Innovate for GMC program and does not represent official GMC policy or implementation.
             </p>
           </div>
         </div>
