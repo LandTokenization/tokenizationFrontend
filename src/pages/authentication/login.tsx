@@ -1,5 +1,5 @@
 import { GalleryVerticalEnd } from "lucide-react"
-import loginImage from '../../assets/loginimage.jpg'
+import loginImage from '../../assets/lopgin image.png'
 
 import { LoginForm } from '../../components/login-form'
 
