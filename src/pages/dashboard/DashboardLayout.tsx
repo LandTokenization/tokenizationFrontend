@@ -3,12 +3,12 @@ import Sidebar from "../../components/Sidebar";
 
 export default function DashboardLayout() {
     return (
-        <div className="flex bg-slate-50 h-screen overflow-hidden">
+        <div className="flex bg-transparent h-screen overflow-hidden text-foreground font-sans selection:bg-primary/20">
             <Sidebar />
 
             <div className="flex-1 flex flex-col overflow-hidden">
                 {/* Mobile Header */}
-                <header className="md:hidden px-4 py-3 border-b bg-white">
+                <header className="md:hidden px-4 py-3 border-b bg-background/80 backdrop-blur-sm">
                     <h1 className="text-base font-semibold">GMC Token Portal</h1>
                 </header>
 

@@ -1,9 +1,19 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { adminNavItems } from "../lib/adminNavConfig";
+import { useToast } from "../context/ToastContext";
 
 export default function AdminSidebar() {
+    const { showSuccess } = useToast();
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        showSuccess("Logged out successfully!");
+        setTimeout(() => {
+            navigate("/login");
+        }, 500);
+    };
     return (
-        <aside className="hidden md:flex md:flex-col h-screen w-64 border-r bg-white/90 backdrop-blur">
+        <aside className="hidden md:flex md:flex-col h-screen w-64 border-r bg-background/60 backdrop-blur text-foreground">
             <div className="px-6 py-4 border-b">
                 <Link to="/admin" className="flex items-center gap-2">
                     <div className="h-8 w-8 rounded-full border flex items-center justify-center text-sm font-semibold">
@@ -29,8 +39,8 @@ export default function AdminSidebar() {
                             [
                                 "flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                                 isActive
-                                    ? "bg-slate-900 text-white"
-                                    : "text-slate-700 hover:bg-slate-100",
+                                    ? "bg-primary text-primary-foreground"
+                                    : "text-muted-foreground hover:bg-background/30",
                             ].join(" ")
                         }
                     >
@@ -42,13 +52,13 @@ export default function AdminSidebar() {
 
             {/* FOOTER + LOGOUT */}
             <div className="px-4 py-3 border-t space-y-3">
-                <p className="text-xs text-slate-500">
+                <p className="text-xs text-muted-foreground">
                     Fictional demo • Not real financial system.
                 </p>
 
                 <button
-                    onClick={() => alert("Demo only — No real logout.")}
-                    className="w-full text-sm font-medium px-3 py-2 border border-slate-300 rounded-md text-slate-700 hover:bg-slate-100 transition"
+                    onClick={handleLogout}
+                    className="w-full text-sm font-medium px-3 py-2 border border-border rounded-md text-foreground bg-background/70 hover:bg-background/80 transition"
                 >
                     Logout
                 </button>

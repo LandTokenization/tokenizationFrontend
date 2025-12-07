@@ -35,8 +35,8 @@ export default function DashboardHome() {
         <div className="space-y-10">
             {/* HEADER */}
             <div>
-                <h1 className="text-2xl font-bold text-slate-900">Dashboard</h1>
-                <p className="text-sm text-slate-500">
+                <h1 className="text-2xl font-bold text-foreground">Dashboard</h1>
+                <p className="text-sm text-muted-foreground">
                     GMC land tokenization demo – fictional data only.
                 </p>
             </div>
@@ -73,25 +73,25 @@ export default function DashboardHome() {
 
             {/* TOP METRICS */}
             <div className="grid gap-5 md:grid-cols-3">
-                <div className="rounded-xl bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
-                    <p className="text-xs font-medium text-slate-500 group-hover:text-slate-700">Token Balance</p>
-                    <p className="mt-2 text-3xl font-bold text-slate-900 group-hover:text-primary transition-colors">12,500 GMC-T</p>
-                    <p className="mt-1 text-xs text-slate-500">≈ 187,500 BTN</p>
+                <div className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                    <p className="text-xs font-medium text-muted-foreground group-hover:text-foreground">Token Balance</p>
+                    <p className="mt-2 text-3xl font-bold text-foreground group-hover:text-primary transition-colors">12,500 GMC-T</p>
+                    <p className="mt-1 text-xs text-muted-foreground">≈ 187,500 BTN</p>
                 </div>
 
-                <div className="rounded-xl bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
-                    <p className="text-xs font-medium text-slate-500 group-hover:text-slate-700">Land Value</p>
-                    <p className="mt-2 text-3xl font-bold text-slate-900 group-hover:text-primary transition-colors">2,500,000 BTN</p>
-                    <p className="mt-1 text-xs text-slate-500">Peg: 1 GMC-T = 15 BTN</p>
+                <div className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                    <p className="text-xs font-medium text-muted-foreground group-hover:text-foreground">Land Value</p>
+                    <p className="mt-2 text-3xl font-bold text-foreground group-hover:text-primary transition-colors">2,500,000 BTN</p>
+                    <p className="mt-1 text-xs text-muted-foreground">Peg: 1 GMC-T = 15 BTN</p>
                 </div>
 
-                <div className="rounded-xl bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
-                    <p className="text-xs font-medium text-slate-500 group-hover:text-slate-700">Valuation Indicator</p>
-                    <p className="mt-2 text-2xl font-semibold text-emerald-600 group-hover:text-emerald-700 transition-colors flex items-center gap-1">
+                <div className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                    <p className="text-xs font-medium text-muted-foreground group-hover:text-foreground">Valuation Indicator</p>
+                    <p className="mt-2 text-2xl font-semibold text-emerald-400 group-hover:text-emerald-300 transition-colors flex items-center gap-1">
                         <TrendingUp className="h-5 w-5" />
                         +8.2% (demo)
                     </p>
-                    <p className="mt-1 text-xs text-slate-500">
+                    <p className="mt-1 text-xs text-muted-foreground">
                         Based on mock GMC growth index.
                     </p>
                 </div>
@@ -100,17 +100,17 @@ export default function DashboardHome() {
             {/* GRAPHS */}
             <div className="grid gap-5 md:grid-cols-2">
                 {/* PRICE GRAPH */}
-                <div className="rounded-xl bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm hover:shadow-md transition-shadow">
                     <div className="flex items-center justify-between mb-2">
                         <div>
-                            <p className="text-sm font-semibold text-slate-800">
+                            <p className="text-sm font-semibold text-foreground">
                                 GMC-T Price Trend
                             </p>
-                            <p className="text-xs text-slate-500">
+                            <p className="text-xs text-muted-foreground">
                                 Demo: Past 7 mock price points
                             </p>
                         </div>
-                        <span className="text-xs px-2 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100">
+                        <span className="text-xs px-2 py-1 rounded-full bg-primary/20 text-primary border border-primary/30">
                             Fictional
                         </span>
                     </div>
@@ -121,7 +121,7 @@ export default function DashboardHome() {
                             preserveAspectRatio="none"
                             className="w-full h-full"
                         >
-                            <line x1="0" y1="30" x2="100" y2="30" stroke="#E5E7EB" strokeWidth="0.7" />
+                            <line x1="0" y1="30" x2="100" y2="30" stroke="rgba(255,255,255,0.1)" strokeWidth="0.7" />
 
                             <polyline
                                 points="0,28 15,20 30,22 45,10 60,14 75,12 100,18"
@@ -142,24 +142,24 @@ export default function DashboardHome() {
                         </svg>
                     </div>
 
-                    <div className="flex justify-between text-xs text-slate-500 mt-2">
+                    <div className="flex justify-between text-xs text-muted-foreground mt-2">
                         <span>Past</span>
                         <span>Now</span>
                     </div>
                 </div>
 
                 {/* LAND VALUE GRAPH */}
-                <div className="rounded-xl bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm hover:shadow-md transition-shadow">
                     <div className="flex items-center justify-between mb-2">
                         <div>
-                            <p className="text-sm font-semibold text-slate-800">
+                            <p className="text-sm font-semibold text-foreground">
                                 Land Valuation Trend
                             </p>
-                            <p className="text-xs text-slate-500">
+                            <p className="text-xs text-muted-foreground">
                                 Demo land appreciation curve
                             </p>
                         </div>
-                        <span className="text-xs px-2 py-1 rounded-full bg-slate-50 text-slate-700 border border-slate-200">
+                        <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-foreground border border-border/40">
                             Mock Data
                         </span>
                     </div>
@@ -170,12 +170,12 @@ export default function DashboardHome() {
                             preserveAspectRatio="none"
                             className="w-full h-full"
                         >
-                            <line x1="0" y1="32" x2="100" y2="32" stroke="#E5E7EB" strokeWidth="0.7" />
+                            <line x1="0" y1="32" x2="100" y2="32" stroke="rgba(255,255,255,0.1)" strokeWidth="0.7" />
 
                             <polyline
                                 points="0,32 20,28 40,26 60,18 80,15 100,12"
                                 fill="none"
-                                stroke="#0F172A"
+                                stroke="#FFD700"
                                 strokeWidth="1.6"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
@@ -183,15 +183,15 @@ export default function DashboardHome() {
 
                             <polyline
                                 points="0,40 0,32 20,28 40,26 60,18 80,15 100,12 100,40"
-                                fill="#CBD5E1"
-                                opacity="0.5"
+                                fill="#FFD700"
+                                opacity="0.2"
                             />
 
-                            <circle cx="100" cy="12" r="2" fill="#0F172A" />
+                            <circle cx="100" cy="12" r="2" fill="#FFD700" />
                         </svg>
                     </div>
 
-                    <div className="flex justify-between text-xs text-slate-500 mt-2">
+                    <div className="flex justify-between text-xs text-muted-foreground mt-2">
                         <span>Low Growth</span>
                         <span>High Growth</span>
                     </div>
@@ -199,21 +199,21 @@ export default function DashboardHome() {
             </div>
 
             {/* RECENT ACTIVITY */}
-            <div className="rounded-xl bg-white border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-                <p className="text-sm font-semibold text-slate-800 mb-3">
+            <div className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm hover:shadow-md transition-shadow">
+                <p className="text-sm font-semibold text-foreground mb-3">
                     Recent Activity (Mock)
                 </p>
-                <ul className="space-y-2 text-sm text-slate-700">
-                    <li className="flex items-center gap-2 p-2 rounded hover:bg-slate-50 transition-colors cursor-pointer">
-                        <span className="text-emerald-600 font-bold">+</span>
+                <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-center gap-2 p-2 rounded hover:bg-background/30 transition-colors cursor-pointer">
+                        <span className="text-emerald-400 font-bold">+</span>
                         <span>Bought 1,000 GMC-T @ 14.8 BTN</span>
                     </li>
-                    <li className="flex items-center gap-2 p-2 rounded hover:bg-slate-50 transition-colors cursor-pointer">
-                        <span className="text-red-600 font-bold">−</span>
+                    <li className="flex items-center gap-2 p-2 rounded hover:bg-background/30 transition-colors cursor-pointer">
+                        <span className="text-red-400 font-bold">−</span>
                         <span>Sold 500 GMC-T @ 15.1 BTN</span>
                     </li>
-                    <li className="flex items-center gap-2 p-2 rounded hover:bg-slate-50 transition-colors cursor-pointer">
-                        <span className="text-blue-600 font-bold">→</span>
+                    <li className="flex items-center gap-2 p-2 rounded hover:bg-background/30 transition-colors cursor-pointer">
+                        <span className="text-blue-400 font-bold">→</span>
                         <span>Transfer to User #102 (Compensation Pilot)</span>
                     </li>
                 </ul>

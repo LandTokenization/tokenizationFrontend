@@ -45,8 +45,8 @@ const AnimatedBackground: React.FC = () => {
       }
 
       // Draw smooth flowing lines connecting particles
-      ctx.strokeStyle = 'rgba(255, 200, 80, 0.08)';
-      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'rgba(255, 200, 80, 0.20)';
+      ctx.lineWidth = 2;
       ctx.beginPath();
       ctx.moveTo(particles[0].x, particles[0].y);
       for (let i = 1; i < particles.length; i++) {
@@ -59,9 +59,9 @@ const AnimatedBackground: React.FC = () => {
       for (let i = 0; i < particles.length; i++) {
         const particle = particles[i];
         const glow = ctx.createRadialGradient(particle.x, particle.y, 0, particle.x, particle.y, 80);
-        glow.addColorStop(0, 'rgba(255, 200, 80, 0.12)');
-        glow.addColorStop(0.5, 'rgba(255, 180, 60, 0.04)');
-        glow.addColorStop(1, 'rgba(255, 160, 40, 0)');
+        glow.addColorStop(0, 'rgba(255, 200, 80, 0.25)');
+        glow.addColorStop(0.5, 'rgba(255, 180, 60, 0.12)');
+        glow.addColorStop(1, 'rgba(255, 160, 40, 0.02)');
         ctx.fillStyle = glow;
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, 80, 0, Math.PI * 2);
@@ -69,8 +69,8 @@ const AnimatedBackground: React.FC = () => {
       }
 
       // Draw slow-moving background waves
-      ctx.strokeStyle = 'rgba(200, 160, 80, 0.06)';
-      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'rgba(200, 160, 80, 0.15)';
+      ctx.lineWidth = 1.5;
       
       for (let waveIndex = 0; waveIndex < 3; waveIndex++) {
         ctx.beginPath();
@@ -91,8 +91,8 @@ const AnimatedBackground: React.FC = () => {
 
       // Draw subtle radial gradient from center
       const centerGradient = ctx.createRadialGradient(width / 2, height / 2, 0, width / 2, height / 2, Math.sqrt(width * width + height * height) / 2);
-      centerGradient.addColorStop(0, 'rgba(255, 200, 80, 0.03)');
-      centerGradient.addColorStop(1, 'rgba(255, 200, 80, 0)');
+      centerGradient.addColorStop(0, 'rgba(255, 200, 80, 0.10)');
+      centerGradient.addColorStop(1, 'rgba(255, 200, 80, 0.02)');
       ctx.fillStyle = centerGradient;
       ctx.fillRect(0, 0, width, height);
 

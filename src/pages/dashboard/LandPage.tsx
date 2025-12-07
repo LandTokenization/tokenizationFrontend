@@ -3,56 +3,56 @@ export default function LandPage() {
         <div className="space-y-10">
             {/* HEADER */}
             <div>
-                <h1 className="text-2xl font-bold text-slate-900">Land Details</h1>
-                <p className="text-sm text-slate-500">
+                <h1 className="text-2xl font-bold text-foreground">Land Details</h1>
+                <p className="text-sm text-muted-foreground">
                     Overview of your registered (dummy) thram and parcel information.
                 </p>
             </div>
 
             {/* INFO CARD */}
-            <div className="rounded-xl bg-white border border-slate-200 p-6 shadow-sm space-y-3">
-                <h2 className="text-lg font-semibold text-slate-800">Parcel Information</h2>
+            <div className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm space-y-3">
+                <h2 className="text-lg font-semibold text-foreground">Parcel Information</h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-sm text-slate-700">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-sm text-foreground">
                     <p>
-                        <span className="font-medium text-slate-800">Thram ID:</span>{" "}
+                        <span className="font-medium text-foreground">Thram ID:</span>{" "}
                         GMC-TH-0001
                     </p>
                     <p>
-                        <span className="font-medium text-slate-800">Plot ID:</span>{" "}
+                        <span className="font-medium text-foreground">Plot ID:</span>{" "}
                         PLOT-A-102
                     </p>
                     <p>
-                        <span className="font-medium text-slate-800">Location:</span>{" "}
+                        <span className="font-medium text-foreground">Location:</span>{" "}
                         Mindfulness District, GMC
                     </p>
                     <p>
-                        <span className="font-medium text-slate-800">Area:</span>{" "}
+                        <span className="font-medium text-foreground">Area:</span>{" "}
                         1,200 sq.m
                     </p>
                     <p>
-                        <span className="font-medium text-slate-800">Valuation:</span>{" "}
+                        <span className="font-medium text-foreground">Valuation:</span>{" "}
                         2,500,000 BTN (dummy)
                     </p>
                     <p>
-                        <span className="font-medium text-slate-800">Token Peg:</span>{" "}
+                        <span className="font-medium text-foreground">Token Peg:</span>{" "}
                         1 GMC-T = 15 BTN
                     </p>
                 </div>
             </div>
 
             {/* VALUATION GRAPH */}
-            <div className="rounded-xl bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm">
                 <div className="flex items-center justify-between mb-2">
                     <div>
-                        <p className="text-sm font-semibold text-slate-800">
+                        <p className="text-sm font-semibold text-foreground">
                             Land Valuation Trend (Demo)
                         </p>
-                        <p className="text-xs text-slate-500">
+                        <p className="text-xs text-muted-foreground">
                             Simulated appreciation pattern for visualization only.
                         </p>
                     </div>
-                    <span className="text-xs px-2 py-1 rounded-full bg-slate-50 text-slate-700 border border-slate-200">
+                    <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-foreground border border-border/40">
                         Mock Data
                     </span>
                 </div>
@@ -68,14 +68,14 @@ export default function LandPage() {
                             y1="32"
                             x2="100"
                             y2="32"
-                            stroke="#E5E7EB"
+                            stroke="rgba(255,255,255,0.1)"
                             strokeWidth="0.7"
                         />
 
                         <polyline
                             points="0,32 20,28 40,26 60,18 80,15 100,12"
                             fill="none"
-                            stroke="#0F172A"
+                            stroke="#FFD700"
                             strokeWidth="1.8"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -83,15 +83,15 @@ export default function LandPage() {
 
                         <polyline
                             points="0,40 0,32 20,28 40,26 60,18 80,15 100,12 100,40"
-                            fill="#CBD5E1"
-                            opacity="0.55"
+                            fill="#FFD700"
+                            opacity="0.2"
                         />
 
-                        <circle cx="100" cy="12" r="2" fill="#0F172A" />
+                        <circle cx="100" cy="12" r="2" fill="#FFD700" />
                     </svg>
                 </div>
 
-                <div className="flex justify-between text-xs text-slate-500 mt-2">
+                <div className="flex justify-between text-xs text-muted-foreground mt-2">
                     <span>Lower valuation</span>
                     <span>Higher valuation</span>
                 </div>
