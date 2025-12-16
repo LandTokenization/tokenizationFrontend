@@ -16,6 +16,8 @@ import LinksPage from "../pages/LinksPage";
 import DashboardLayout from "../pages/dashboard/DashboardLayout";
 import DashboardHome from "../pages/dashboard/DashboardHome";
 import LandPage from "../pages/dashboard/LandPage";
+import LandHoldingsPage from "../pages/dashboard/LandHoldingsPage";
+import LandDetailsPage from "../pages/dashboard/LandDetailsPage";
 import WalletPage from "../pages/dashboard/WalletPage";
 import MarketPage from "../pages/dashboard/MarketPage";
 import TransactionsPage from "../pages/dashboard/TransactionsPage";
@@ -52,6 +54,8 @@ export default function AppRouter() {
             <Route path="/dashboard" element={<DashboardLayout />}>
                 <Route index element={<DashboardHome />} />
                 <Route path="land" element={<LandPage />} />
+                <Route path="land-holdings" element={<LandHoldingsPage />} />
+                <Route path="land-details" element={<LandDetailsPage />} />
                 <Route path="wallet" element={<WalletPage />} />
                 <Route path="market" element={<MarketPage />} />
                 <Route path="transactions" element={<TransactionsPage />} />

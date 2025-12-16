@@ -1,99 +1,89 @@
+import { Link } from "react-router-dom";
+import { Eye, FileText } from "lucide-react";
+
 export default function LandPage() {
     return (
         <div className="space-y-10">
             {/* HEADER */}
             <div>
-                <h1 className="text-2xl font-bold text-foreground">Land Details</h1>
+                <h1 className="text-2xl font-bold text-foreground">Land Management</h1>
                 <p className="text-sm text-muted-foreground">
-                    Overview of your registered (dummy) thram and parcel information.
+                    Access your land holdings and detailed plot information.
                 </p>
+            </div>
+
+            {/* QUICK LINKS */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Land Holdings Card */}
+                <Link 
+                    to="/dashboard/land-holdings"
+                    className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm hover:shadow-lg transition-all duration-200 hover:border-primary/60 cursor-pointer group"
+                >
+                    <div className="flex items-start justify-between mb-4">
+                        <div>
+                            <h2 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                                Land Holdings
+                            </h2>
+                            <p className="text-sm text-muted-foreground mt-1">
+                                View all your GMC urban and rural land holdings
+                            </p>
+                        </div>
+                        <Eye className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </div>
+                    <div className="pt-4 border-t border-border/20">
+                        <p className="text-xs text-muted-foreground">
+                            Summary of all thram and parcel holdings with ownership details
+                        </p>
+                    </div>
+                </Link>
+
+                {/* Land Details Card */}
+                <Link 
+                    to="/dashboard/land-details"
+                    className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm hover:shadow-lg transition-all duration-200 hover:border-primary/60 cursor-pointer group"
+                >
+                    <div className="flex items-start justify-between mb-4">
+                        <div>
+                            <h2 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                                Land Details
+                            </h2>
+                            <p className="text-sm text-muted-foreground mt-1">
+                                Detailed plot and structure information
+                            </p>
+                        </div>
+                        <FileText className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </div>
+                    <div className="pt-4 border-t border-border/20">
+                        <p className="text-xs text-muted-foreground">
+                            Plot specifications, ownership details, and structure information
+                        </p>
+                    </div>
+                </Link>
             </div>
 
             {/* INFO CARD */}
             <div className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm space-y-3">
-                <h2 className="text-lg font-semibold text-foreground">Parcel Information</h2>
+                <h2 className="text-lg font-semibold text-foreground">About Your Land Information</h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-sm text-foreground">
+                <div className="space-y-2 text-sm text-foreground">
                     <p>
-                        <span className="font-medium text-foreground">Thram ID:</span>{" "}
-                        GMC-TH-0001
+                        <span className="font-medium">Thram ID:</span> Official land parcel identifier issued by government
                     </p>
                     <p>
-                        <span className="font-medium text-foreground">Plot ID:</span>{" "}
-                        PLOT-A-102
+                        <span className="font-medium">Plot ID:</span> Specific plot reference within a thram
                     </p>
                     <p>
-                        <span className="font-medium text-foreground">Location:</span>{" "}
-                        Mindfulness District, GMC
+                        <span className="font-medium">Ownership Type:</span> Individual, Joint, or Family ownership classification
                     </p>
                     <p>
-                        <span className="font-medium text-foreground">Area:</span>{" "}
-                        1,200 sq.m
+                        <span className="font-medium">LAP:</span> Land Adjustment Plan reference number
                     </p>
                     <p>
-                        <span className="font-medium text-foreground">Valuation:</span>{" "}
-                        2,500,000 BTN (dummy)
+                        <span className="font-medium">Mortgage:</span> Current mortgage status of the property
                     </p>
                     <p>
-                        <span className="font-medium text-foreground">Token Peg:</span>{" "}
-                        1 GMC-T = 15 BTN
+                        <span className="font-medium">Structure:</span> Indicates if there are buildings on the plot
                     </p>
-                </div>
-            </div>
-
-            {/* VALUATION GRAPH */}
-            <div className="rounded-xl bg-background/20 backdrop-blur border border-border/40 p-6 shadow-sm">
-                <div className="flex items-center justify-between mb-2">
-                    <div>
-                        <p className="text-sm font-semibold text-foreground">
-                            Land Valuation Trend (Demo)
-                        </p>
-                        <p className="text-xs text-muted-foreground">
-                            Simulated appreciation pattern for visualization only.
-                        </p>
-                    </div>
-                    <span className="text-xs px-2 py-1 rounded-full bg-secondary/20 text-foreground border border-border/40">
-                        Mock Data
-                    </span>
-                </div>
-
-                <div className="mt-4 h-44">
-                    <svg
-                        viewBox="0 0 100 40"
-                        preserveAspectRatio="none"
-                        className="w-full h-full"
-                    >
-                        <line
-                            x1="0"
-                            y1="32"
-                            x2="100"
-                            y2="32"
-                            stroke="rgba(255,255,255,0.1)"
-                            strokeWidth="0.7"
-                        />
-
-                        <polyline
-                            points="0,32 20,28 40,26 60,18 80,15 100,12"
-                            fill="none"
-                            stroke="#FFD700"
-                            strokeWidth="1.8"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-
-                        <polyline
-                            points="0,40 0,32 20,28 40,26 60,18 80,15 100,12 100,40"
-                            fill="#FFD700"
-                            opacity="0.2"
-                        />
-
-                        <circle cx="100" cy="12" r="2" fill="#FFD700" />
-                    </svg>
-                </div>
-
-                <div className="flex justify-between text-xs text-muted-foreground mt-2">
-                    <span>Lower valuation</span>
-                    <span>Higher valuation</span>
                 </div>
             </div>
         </div>

@@ -18,6 +18,8 @@ export type NavItem = {
 export const dashboardNavItems: NavItem[] = [
     { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
     { label: "Land", href: "/dashboard/land", icon: Map },
+    { label: "Land Holdings", href: "/dashboard/land-holdings", icon: Map },
+    { label: "Land Details", href: "/dashboard/land-details", icon: Map },
     { label: "Wallet", href: "/dashboard/wallet", icon: Wallet },
     { label: "Market", href: "/dashboard/market", icon: LineChart },
     { label: "Transactions", href: "/dashboard/transactions", icon: ListOrdered },
