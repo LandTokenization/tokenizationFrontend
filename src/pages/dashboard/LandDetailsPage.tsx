@@ -12,12 +12,15 @@ export default function LandDetailsPage() {
                 {
                     plotId: "GT1-747",
                     precinct: "Urban Village 2",
+                    landType: undefined,
                     netArea: 5184,
                     lap: "SP104/ Gelephu Thromde LAP 4",
+                    plotClass: undefined,
                     mortgage: "No",
                     structure: "No",
                     acquired: "Yes",
-                    remarks: "Plot GT1-747 acquisition date- 27/11/25"
+                    remarks: "Plot GT1-747 acquisition date- 27/11/25",
+                    action: undefined
                 }
             ],
             totalArea: 5184
@@ -31,8 +34,10 @@ export default function LandDetailsPage() {
                 {
                     plotId: "SP1-631",
                     precinct: "Urban Core",
+                    landType: undefined,
                     netArea: 1982,
                     lap: "SP201/ Sechamthang LAP",
+                    plotClass: undefined,
                     mortgage: "Yes",
                     structure: "Yes",
                     acquired: "No",
@@ -50,13 +55,16 @@ export default function LandDetailsPage() {
             plots: [
                 {
                     plotId: "GEL-296",
+                    precinct: undefined,
                     landType: "Kamzhing",
                     netArea: 0.10,
+                    lap: undefined,
                     plotClass: "Class A1",
                     mortgage: "No",
                     structure: "No",
                     acquired: "No",
-                    remarks: "Holds 50% land share of 0.10 acres"
+                    remarks: "Holds 50% land share of 0.10 acres",
+                    action: undefined
                 }
             ],
             totalArea: 0.10
@@ -69,31 +77,42 @@ export default function LandDetailsPage() {
             plots: [
                 {
                     plotId: "BHU-1120",
+                    precinct: undefined,
                     landType: "Kamzhing",
                     netArea: 1.00,
+                    lap: undefined,
                     plotClass: "Class A",
                     mortgage: "No",
                     structure: "No",
                     acquired: "Yes",
-                    remarks: "Plot BHU-1120 acquisition date- 17/12/25"
+                    remarks: "Plot BHU-1120 acquisition date- 17/12/25",
+                    action: undefined
                 },
                 {
                     plotId: "BHU-1121",
+                    precinct: undefined,
                     landType: "Kamzhing",
                     netArea: 0.50,
+                    lap: undefined,
                     plotClass: "Class A",
                     mortgage: "No",
                     structure: "No",
-                    acquired: "No"
+                    acquired: "No",
+                    remarks: "",
+                    action: undefined
                 },
                 {
                     plotId: "BHU-1122",
+                    precinct: undefined,
                     landType: "Kamzhing",
                     netArea: 0.27,
+                    lap: undefined,
                     plotClass: "Class A",
                     mortgage: "No",
                     structure: "No",
-                    acquired: "No"
+                    acquired: "No",
+                    remarks: "",
+                    action: undefined
                 }
             ],
             totalArea: 1.77
