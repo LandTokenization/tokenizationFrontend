@@ -1,8 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
-/* --------------------------
-   PUBLIC PAGES
---------------------------- */
+/* PUBLIC */
 import HomePage from "../pages/HomePage";
 import LoginPage from "../pages/authentication/login";
 import TeamPage from "../pages/Team";
@@ -10,9 +8,7 @@ import AboutPagePublic from "../pages/AboutPage";
 import FAQPagePublic from "../pages/FAQPage";
 import LinksPage from "../pages/LinksPage";
 
-/* --------------------------
-   USER DASHBOARD
---------------------------- */
+/* USER DASHBOARD */
 import DashboardLayout from "../pages/dashboard/DashboardLayout";
 import DashboardHome from "../pages/dashboard/DashboardHome";
 import LandPage from "../pages/dashboard/LandPage";
@@ -23,9 +19,7 @@ import HelpPage from "../pages/dashboard/HelpPage";
 import AboutPage from "../pages/dashboard/AboutPage";
 import ProfilePage from "../pages/dashboard/ProfilePage";
 
-/* --------------------------
-   ADMIN DASHBOARD
---------------------------- */
+/* ADMIN DASHBOARD */
 import AdminLayout from "../pages/admin/AdminLayout";
 import AdminDashboardHome from "../pages/admin/AdminDashboardHome";
 import AdminUsersPage from "../pages/admin/AdminUsersPage";
@@ -34,9 +28,16 @@ import AdminTokenSettingsPage from "../pages/admin/AdminTokenSettingsPage";
 import AdminContentPage from "../pages/admin/AdminContentPage";
 import AdminTransactionsPage from "../pages/admin/AdminTransactionsPage";
 
-/* --------------------------
-   ROUTER COMPONENT
---------------------------- */
+import { AdminLoadingProvider } from "../context/AdminLoadingContext";
+
+function AdminRouteShell() {
+    return (
+        <AdminLoadingProvider>
+            <AdminLayout />
+        </AdminLoadingProvider>
+    );
+}
+
 export default function AppRouter() {
     return (
         <Routes>
@@ -60,8 +61,8 @@ export default function AppRouter() {
                 <Route path="profile" element={<ProfilePage />} />
             </Route>
 
-            {/* ADMIN ROUTES */}
-            <Route path="/admin" element={<AdminLayout />}>
+            {/* ADMIN ROUTES (wrapped) */}
+            <Route path="/admin" element={<AdminRouteShell />}>
                 <Route index element={<AdminDashboardHome />} />
                 <Route path="users" element={<AdminUsersPage />} />
                 <Route path="land" element={<AdminLandPage />} />
