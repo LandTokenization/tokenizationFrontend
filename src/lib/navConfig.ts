@@ -22,8 +22,6 @@ export const dashboardNavItems: NavItem[] = [
     { label: "Land", href: "/dashboard/land", icon: Map },
     { label: "Wallet", href: "/dashboard/wallet", icon: Wallet },
     { label: "Market", href: "/dashboard/market", icon: LineChart },
-    { label: "Marketplace", href: "/dashboard/marketplace", icon: ShoppingCart },
-    { label: "Transactions", href: "/dashboard/transactions", icon: ListOrdered },
-    { label: "Help & FAQ", href: "/dashboard/help", icon: HelpCircle },
-    { label: "About", href: "/dashboard/about", icon: Info },
+    { label: "Market Trends", href: "/dashboard/marketplace", icon: ShoppingCart },
+    { label: "Activity Logs", href: "/dashboard/transactions", icon: ListOrdered },
 ];

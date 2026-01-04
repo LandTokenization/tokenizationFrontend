@@ -16,8 +16,6 @@ import WalletPage from "../pages/dashboard/WalletPage";
 import MarketPage from "../pages/dashboard/MarketPage";
 import TokenMarketplace from "../pages/dashboard/TokenMarketplace";
 import TransactionsPage from "../pages/dashboard/TransactionsPage";
-import HelpPage from "../pages/dashboard/HelpPage";
-import AboutPage from "../pages/dashboard/AboutPage";
 import ProfilePage from "../pages/dashboard/ProfilePage";
 
 /* ADMIN DASHBOARD */
@@ -58,8 +56,6 @@ export default function AppRouter() {
                 <Route path="market" element={<MarketPage />} />
                 <Route path="marketplace" element={<TokenMarketplace />} />
                 <Route path="transactions" element={<TransactionsPage />} />
-                <Route path="help" element={<HelpPage />} />
-                <Route path="about" element={<AboutPage />} />
                 <Route path="profile" element={<ProfilePage />} />
             </Route>
 

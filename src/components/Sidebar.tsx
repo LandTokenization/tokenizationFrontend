@@ -17,14 +17,11 @@ export default function Sidebar() {
     return (
         <aside className="hidden md:flex md:flex-col h-screen w-64 border-r bg-background/60 backdrop-blur text-foreground">
             <div className="px-6 py-4 border-b hover:bg-background/30 transition-colors">
-                <Link to="/dashboard" className="flex items-center gap-2 cursor-pointer">
-                    <div className="h-8 w-8 rounded-full border border-primary bg-primary/10 flex items-center justify-center text-sm font-semibold text-primary hover:bg-primary hover:text-white transition-all">
-                        LT
+                <Link to="/dashboard" className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity">
+                    <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center hover:shadow-md transition-shadow">
+                        <span className="text-primary-foreground font-bold text-lg">LT</span>
                     </div>
-                    <div className="flex flex-col">
-                        <span className="text-sm font-semibold">GMC Token Portal</span>
-                        <span className="text-xs text-muted-foreground">Demo Prototype</span>
-                    </div>
+                    <span className="text-xl font-semibold tracking-tight">Land Tokenization</span>
                 </Link>
             </div>
 
