@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ethers } from "ethers";
-import GMCLandABI from "../../../web3/artifacts/contracts/GMCLandCompensation.sol/GMCLandCompensation.json";
+import GMCLandABI from "../abi/GMCLandCompensation.json";
 
 export type PlotRow = {
     plotId: string;

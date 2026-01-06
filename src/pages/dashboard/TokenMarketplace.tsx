@@ -582,8 +582,8 @@ export default function TokenMarketplace() {
                                         <div className="flex items-baseline justify-between">
                                             <span className="text-xs text-muted-foreground">Price per token</span>
                                             <div className="text-right">
-                                                <p className="text-lg font-bold text-foreground">{listing.priceEthPerToken.toFixed(6)} ETH</p>
-                                                <p className="text-xs text-muted-foreground">Floor: {listing.floorPriceEth.toFixed(6)} ETH</p>
+                                                <p className="text-lg font-bold text-foreground">{listing.priceEthPerToken.toFixed(6)} TER</p>
+                                                <p className="text-xs text-muted-foreground">Floor: {listing.floorPriceEth.toFixed(6)} TER</p>
                                             </div>
                                         </div>
                                     </div>
@@ -726,7 +726,7 @@ export default function TokenMarketplace() {
                                     </div>
                                     <div className="flex justify-between text-sm">
                                         <span className="text-muted-foreground">Price / token</span>
-                                        <span className="font-semibold">{buyModal.listing.priceEthPerToken.toFixed(6)} ETH</span>
+                                        <span className="font-semibold">{buyModal.listing.priceEthPerToken.toFixed(6)} TER</span>
                                     </div>
                                     <div className="flex justify-between text-sm">
                                         <span className="text-muted-foreground">Remaining</span>
@@ -745,7 +745,7 @@ export default function TokenMarketplace() {
                                     />
                                     <div className="text-xs text-muted-foreground flex justify-between">
                                         <span>Estimated total</span>
-                                        <span className="font-semibold">{estimatedTotalEth} ETH</span>
+                                        <span className="font-semibold">{estimatedTotalEth} TER</span>
                                     </div>
                                 </div>
                             </div>

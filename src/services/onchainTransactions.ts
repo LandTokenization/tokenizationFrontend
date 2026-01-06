@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import artifact from "../../../web3/artifacts/contracts/GMCLandCompensation.sol/GMCLandCompensation.json";
+import artifact from "../abi/GMCLandCompensation.json";
 
 import type { TxRow, TxType } from "../types/tx";
 import { shortAddr } from "../types/tx";

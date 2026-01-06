@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import artifact from "../../../web3/artifacts/contracts/GMCLandCompensation.sol/GMCLandCompensation.json";
+import artifact from "../abi/GMCLandCompensation.json";
 
 const CONTRACT_ADDRESS = import.meta.env.VITE_GMC_LAND_CONTRACT_ADDRESS as string;
 const ABI = (artifact as any).abi as ethers.InterfaceAbi;

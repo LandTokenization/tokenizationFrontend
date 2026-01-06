@@ -388,7 +388,7 @@ export default function MarketPage() {
               </div>
 
               <div>
-                <label className="text-sm font-semibold text-foreground">Price per token (ETH)</label>
+                <label className="text-sm font-semibold text-foreground">Price per token (TER)</label>
                 <input
                   value={askPriceEth}
                   onChange={(e) => setAskPriceEth(e.target.value)}

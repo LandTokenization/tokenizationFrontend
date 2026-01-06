@@ -5,8 +5,6 @@ import {
     LineChart,
     ShoppingCart,
     ListOrdered,
-    HelpCircle,
-    Info,
     User,
 } from "lucide-react";
 
