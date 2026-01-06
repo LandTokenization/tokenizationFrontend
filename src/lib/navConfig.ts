@@ -5,6 +5,8 @@ import {
     LineChart,
     ShoppingCart,
     ListOrdered,
+    HelpCircle,
+    Info,
     User,
 } from "lucide-react";
 
@@ -20,6 +22,6 @@ export const dashboardNavItems: NavItem[] = [
     { label: "Land", href: "/dashboard/land", icon: Map },
     { label: "Wallet", href: "/dashboard/wallet", icon: Wallet },
     { label: "Market", href: "/dashboard/market", icon: LineChart },
-    { label: "Market Place", href: "/dashboard/marketplace", icon: ShoppingCart },
+    { label: "Market Trends", href: "/dashboard/marketplace", icon: ShoppingCart },
     { label: "Activity Logs", href: "/dashboard/transactions", icon: ListOrdered },
 ];

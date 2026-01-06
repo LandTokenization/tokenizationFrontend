@@ -3,7 +3,7 @@ import {
     Users,
     Map,
     Coins,
-    // FileText,
+    FileText,
     ListOrdered,
 } from "lucide-react";
 
@@ -18,6 +18,6 @@ export const adminNavItems: AdminNavItem[] = [
     { label: "Users", href: "/admin/users", icon: Users },
     { label: "Land & Thram", href: "/admin/land", icon: Map },
     { label: "Land Inheritance", href: "/admin/token-settings", icon: Coins },
-    // { label: "Content (About / FAQ)", href: "/admin/content", icon: FileText },
+    { label: "Content (About / FAQ)", href: "/admin/content", icon: FileText },
     { label: "Transactions", href: "/admin/transactions", icon: ListOrdered },
 ];

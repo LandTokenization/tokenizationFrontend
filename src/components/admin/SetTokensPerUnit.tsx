@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { ethers } from "ethers";
 
+// ✅ Use the SAME ABI source as AdminLandPage
 import GMCLandABI from "../../abi/GMCLandCompensation.json";
 
 type Props = {
