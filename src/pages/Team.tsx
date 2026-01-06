@@ -2,14 +2,13 @@ import React from 'react';
 import SiteHeader from '../components/landing/SiteHeader';
 import SiteFooter from '../components/landing/SiteFooter';
 import { Card, CardContent } from '../components/landing/Card';
-import Badge from '../components/landing/Badge';
+// import Badge from '../components/landing/Badge';
 
 // Import all WhatsApp images
 import img1 from '../assets/WhatsApp Image 2025-11-16 at 17.28.31_1203b85a.jpg';
 import img2 from '../assets/WhatsApp Image 2025-11-16 at 17.29.10_5ed7aced.jpg';
 import img3 from '../assets/WhatsApp Image 2025-11-16 at 17.33.36_7ac96a2f.jpg';
 import img4 from '../assets/WhatsApp Image 2025-11-16 at 17.36.16_53022e51.jpg';
-import img5 from '../assets/WhatsApp Image 2025-11-16 at 17.38.31_3570e369.jpg';
 import img6 from '../assets/WhatsApp Image 2025-11-16 at 18.34.27_c67dd515.jpg';
 import img7 from '../assets/WhatsApp Image 2025-11-16 at 18.41.40_4534cac9.jpg';
 import img8 from '../assets/WhatsApp Image 2025-11-16 at 18.58.00_e99cf6ca.jpg';
@@ -19,105 +18,139 @@ import img11 from '../assets/WhatsApp Image 2025-11-16 at 19.27.11_ea6d61ba.jpg'
 import img12 from '../assets/WhatsApp Image 2025-11-16 at 19.30.51_e27ddf2e.jpg';
 import img13 from '../assets/WhatsApp Image 2025-11-16 at 19.38.34_343b3f35.jpg';
 import img14 from '../assets/WhatsApp Image 2025-11-16 at 23.06.03_6996aa42.jpg';
+import img15 from '../assets/bobo final.png';
+import img16 from '../assets/chime final.png';
+import img17 from '../assets/lela final.png';
+import img18 from '../assets/tandin final.png';
+import img19 from '../assets/Picturetokenization.jpeg';
+// import { TextAlignEndIcon } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'Jigme Wangchuck',
-    role: 'Project Lead & Policy Strategist',
-    image: img1,
-    bio: 'Leading the strategic vision for GMC\'s tokenization initiative. With over 15 years of experience in urban planning and policy development, Jigme ensures that the project aligns with national happiness goals while embracing modern economic frameworks.',
-    department: 'Strategy',
+    name: 'Tandin Wangmo',
+    role: 'Team Lead',
+    image: img18,
+    bio: 'I currently serve as a Regional Head at the Urban Land Division, NLCS. I am a certified property valuer from University Technology Malaysia and have been part of the PAVA Taskforce since 2019 and the Property Tax Taskforce since 2022.',
+    department: 'BA in Psychology, Economics, and Marketing',
   },
   {
-    name: 'Sonam Dema',
-    role: 'Lead Economist',
+    name: 'Tshewang Wangchuk',
+    role: 'HR Team',
+    image: img11,
+    bio: 'I am a HR professional with a proven track record at Royal Insurance Corporation of Bhutan Limited, where I excelled in policy development, employee relations, and strategic HR initiatives. My key achievements in policy development include spearheading the creation of the company\'s Service Rules, Employee Compensation and Benefits Manual, Performance Management System Manual, Board Remuneration Policy, and Management Manual.',
+    department: 'BA. (Hons) Psychology and HRM',
+  },
+  {
+    name: 'Sonam Choki',
+    role: 'HR Team',
+    image: img7,
+    bio: 'An English Honors graduate with strong communication, public speaking, and social media skills, combined with proficiency in MS Office. Adaptive and quick to learn, I bring creativity, integrity, and the ability to thrive as both a leader and a team player, with a commitment to continuous growth and contribution in a dynamic work environment.',
+    department: 'BA Liberal Arts(English Honors)',
+  },
+  {
+    name: 'Chimi Lham',
+    role: 'Tech Lead',
+    image: img16,
+    bio: 'I am Chimi Lham, serving as a Survey Engineer under the Cadastral Information Division of the National Land Commission. I graduated from JNEC with a degree in Surveying and Geoinformatics, and my work focuses on cadastral mapping, land data management, geospatial analysis, and ensuring the accuracy and integrity of national land records.',
+    department: 'BE Surveying and Geoinformatics',
+  },
+  {
+    name: 'Pema Seldon',
+    role: 'Tech Team',
     image: img2,
-    bio: 'Specializing in development economics and digital assets. Sonam designs the economic models that ensure fair valuation and sustainable growth for the token ecosystem, focusing on long-term value preservation for landowners.',
-    department: 'Economics',
+    bio: 'I am Pema Seldon, a GIS Officer with the Urban Planning Division, Samdrup Jongkhar Thromde. I graduated from Amity University, India, pursuing a degree in B.Sc. Geoinformatics. I work with maps, data, and technology to turn complex information into insights that help communities grow smarter and stronger.',
+    department: 'B.Sc Geoinformatics',
   },
   {
-    name: 'Tashi Dorji',
-    role: 'Technical Architect',
-    image: img3,
-    bio: 'Blockchain expert and systems architect. Tashi oversees the technical implementation of the tokenization platform, ensuring security, scalability, and transparency in every transaction recorded on the ledger.',
-    department: 'Technology',
+    name: 'Kinley Wangyel',
+    role: 'Tech Team',
+    image: img10,
+    bio: 'Hi! I\'m a full-stack developer who basically lives on coffee, commits, and the thrill of finally fixing that one bug at 3 AM. I build from sleek frontends to stubborn backends, and I love turning chaotic ideas into apps that actually work. If it involves code, creativity, and a little bit of chaos- I\'m in.',
+    department: 'B.Sc Computer Science',
   },
   {
-    name: 'Karma Lhamo',
-    role: 'Legal & Governance Advisor',
+    name: 'Tandin Dorji',
+    role: 'Tech Team',
+    image: img13,
+    bio: 'My core responsibilities on the team involve Blockchain implementation, smart contract drafting (ensuring they are secure and efficient), and Decentralized Application (DApp) development. Crucially, I\'m also an expert in full-stack development, meaning I will help handle both the backend logic and the frontend interface.',
+    department: 'B.Sc Computer Science',
+  },
+  {
+    name: 'Namgyel Wangdi',
+    role: 'Tech Team',
+    image: img1,
+    bio: 'I\'m Namgyel Wangdi, a survey engineer with the National Land Commission, currently serving under the Governor\'s Office for the Gelephu Mindfulness City (GMC) initiative. My work is rooted in geospatial precision and national service, and I\'m proud to be contributing to one of Bhutan\'s most ambitious and transformative projects.',
+    department: 'BE Surveying and Geoinformatics',
+  },
+  {
+    name: 'Tandin Tshewang',
+    role: 'Tech Team',
+    image: img15,
+    bio: 'I am Tandin Tshewang, with a background in Surveying and Geoinformatics Engineering and practical experience in mining operations. I bring strong analytical skills, field experience, and additional abilities in graphic design and videography, helping me deliver both technical accuracy and creative value.',
+    department: 'BE Surveying and Geoinformatics',
+  },
+  {
+    name: 'Thinley Om',
+    role: 'ROD Lead',
     image: img4,
-    bio: 'Expert in property law and digital governance. Karma navigates the complex regulatory landscape to create a robust legal framework that protects the rights of all participants in the GMC ecosystem.',
-    department: 'Legal',
+    bio: 'Hello Everyone, I am Thinley Om, an Attorney at the Office of the Attorney General, Bhutan. I joined this team to contribute my legal expertise to the GMC Land Tokenization project under the Innovate for GMC program. With my background, I contribute to policy drafting, legal feasibility assessments, and ensuring that the token economy aligns with Bhutanese laws and values, especially protecting landowners\' rights and promoting transparency.',
+    department: 'BE Surveying and Geoinformatics',
   },
   {
-    name: 'Pema Tenzin',
-    role: 'Community Liaison',
-    image: img5,
-    bio: 'Dedicated to community engagement and social welfare. Pema acts as the bridge between the technical team and the landowners, ensuring that the community\'s voice is heard and their needs are met throughout the transition.',
-    department: 'Community',
+    name: 'Dechen Pelden',
+    role: 'ROD Team',
+    image: img9,
+    bio: 'I am Pelsup Dechen Pelden. I currently work as a Financial Analyst at the Royal Securities Exchange of Bhutan, where I analyse financial data, prepare reports, and support regulatory and policy-related work. I hold a Bachelor of Commerce in Finance.',
+    department: 'B.Com Finance',
+  },
+  {
+    name: 'Tshering Pelden',
+    role: 'ROD Team',
+    image: img8,
+    bio: 'I describe myself as a hardworking person who values teamwork, enjoys creating a positive work environment, and is always eager to learn new skills. In this role, I will be working as a data analyst, using Excel to create pie charts, bar graphs, and line graphs to present data clearly and meaningfully.',
+    department: 'Bcom Finance',
+  },
+  {
+    name: 'Dechen Choden',
+    role: 'ROD Team',
+    image: img6,
+    bio: 'I am Pelsup Dechen Choden. I hold a Bachelor\'s in Commerce (Honours) from Chandigarh University and have worked with organizations such as BBS, Bhutan Data Science, and Zhenphen Solar, where I strengthened my skills in communication, research, financial management, and digital tools.',
+    department: 'Bachelor of commerce (honours)',
+  },
+  {
+    name: 'Srijana Gurung',
+    role: 'ROD Team',
+    image: img14,
+    bio: 'I graduated from Norbuling Rigter College, Paro, with a Bachelor of Arts in Development Studies. As part of my academic training, I completed an internship with the Planning Division at Haa Dzongkhag and participated in a workshop on qualitative research methods.',
+    department: 'BA Development Studies',
+  },
+  {
+    name: 'Sonam Zangmo',
+    role: 'ROD Team',
+    image: img12,
+    bio: 'I am Pelsup Sonam Zangmo, a recent graduate from Norbuling Rigter College with a Bachelor\'s degree in Commerce, specializing in Finance. Currently, I serve as a member of the GMC Land Tokenization team in the role of Data Analyst. I have also participated in entrepreneurship training and completed the IC3 Digital Literacy certification.',
+    department: 'B.Com Finance',
   },
   {
     name: 'Dechen Wangmo',
-    role: 'UX/UI Designer',
-    image: img6,
-    bio: 'Crafting intuitive and accessible digital experiences. Dechen focuses on making the token platform user-friendly for citizens of all ages and technical backgrounds, prioritizing clarity and ease of use.',
-    department: 'Design',
+    role: 'COM Team',
+    image: img19,
+    bio: 'I am Pelsup Dechen Wangmo, a recent BBA Marketing graduate from Gedu College of Business Studies with additional training in digital skills and marketing. I would describe myself as dedicated, adaptable, and eager to learn, especially when working on new and innovative ideas.',
+    department: 'BBA, Marketing',
   },
   {
-    name: 'Dorji Tshering',
-    role: 'Data Analytics Lead',
-    image: img7,
-    bio: 'Specializing in business intelligence and data-driven insights. Dorji leverages analytics to track token performance and inform strategic decisions that benefit the entire GMC community.',
-    department: 'Analytics',
+    name: 'Leela Bdr Bhattarai',
+    role: 'COM Team',
+    image: img17,
+    bio: 'I am passionate about data science and artificial intelligence, with a strong interest in turning raw data into meaningful insights. I enjoy working with data to uncover patterns, support decision making, and solve real-world problems. As a dedicated learner in this field, I bring analytical thinking, curiosity, and a commitment to accuracy.',
+    department: 'BSC. data science',
   },
   {
-    name: 'Yeshi Yangzom',
-    role: 'Community Outreach Coordinator',
-    image: img8,
-    bio: 'Passionate about stakeholder engagement and cultural integration. Yeshi ensures that the tokenization initiative respects local traditions while driving meaningful development opportunities.',
-    department: 'Outreach',
-  },
-  {
-    name: 'Kinley Tenzin',
-    role: 'Smart Contract Developer',
-    image: img9,
-    bio: 'Expert in blockchain technology and decentralized systems. Kinley develops and audits smart contracts to ensure secure and transparent token operations.',
-    department: 'Development',
-  },
-  {
-    name: 'Yangkyi Dema',
-    role: 'Sustainability Officer',
-    image: img10,
-    bio: 'Committed to ensuring that GMC development aligns with environmental and social sustainability standards. Yangkyi monitors the project\'s impact on local ecosystems.',
-    department: 'Sustainability',
-  },
-  {
-    name: 'Tenzin Norbu',
-    role: 'Risk Management Specialist',
-    image: img11,
-    bio: 'Identifying and mitigating potential risks in the tokenization model. Tenzin works to protect stakeholders and ensure project resilience in changing conditions.',
-    department: 'Risk',
-  },
-  {
-    name: 'Pemako Yangzom',
-    role: 'Knowledge Management Officer',
-    image: img12,
-    bio: 'Managing documentation and institutional knowledge. Pemako ensures that all project insights, lessons learned, and best practices are captured for future reference.',
-    department: 'Operations',
-  },
-  {
-    name: 'Rigzin Wangdi',
-    role: 'Financial Controller',
-    image: img13,
-    bio: 'Overseeing financial planning and resource allocation for the GMC initiative. Rigzin ensures fiscal responsibility and optimal use of project funds.',
-    department: 'Finance',
-  },
-  {
-    name: 'Chimi Dolma',
-    role: 'Stakeholder Relations Manager',
-    image: img14,
-    bio: 'Facilitating relationships between the project team, government agencies, and community representatives. Chimi fosters collaboration and mutual understanding across all parties.',
-    department: 'Relations',
+    name: 'Thukten Dema',
+    role: 'COM Team',
+    image: img3,
+    bio: 'I have graduated from Royal Thimphu College with a degree in Bachelor of Arts in Anthropology. I possess research skills in conducting a thorough literature review, designing projects, and analyzing data. I am resilient and adaptable to cross-functional teams, and can present clear, concise reports. Strong organizational skills and a keen eye for detail, ensuring high-quality data in all research activities.',
+    department: 'B.A Anthropology',
   },
 ];
 
@@ -129,23 +162,20 @@ const TeamPage: React.FC = () => {
       <main className="flex-1">
         {/* Hero Section */}
         <div className="py-16 md:py-24 border-b border-border/40">
-          <div className="container mx-auto px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-2">
             <div className="text-center mb-16 space-y-4">
-              <Badge variant="secondary" className="px-4 py-1">
+              {/* <Badge variant="secondary" className="px-4 py-1">
                 Our People
-              </Badge>
+              </Badge> */}
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Meet the Visionaries Behind GMC Tokenization
+                Meet the Team
               </h1>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                A multidisciplinary team of 14 dedicated professionals building a fair, sustainable, and innovative future for Gelephu.
-              </p>
             </div>
           </div>
         </div>
 
         {/* Team Grid */}
-        <div className="py-24 bg-transparent">
+        <div className="py-8 bg-transparent">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {teamMembers.map((member, index) => (

@@ -66,7 +66,7 @@ const SiteFooter: React.FC = () => (
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-border/40 text-sm text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} Land Tokenization / GMC Initiative. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Land Tokenization. All rights reserved.</p>
         <div className="flex items-center gap-6 mt-4 md:mt-0">
           <a href="#" className="hover:text-foreground transition-colors">
             Twitter
