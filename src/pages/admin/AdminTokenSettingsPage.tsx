@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { ethers } from "ethers";
 import { useGMCLandInheritance } from "../../hooks/useGMCLandInheritance";
 import type { PlotRow } from "../../hooks/useGMCLandInheritance";
